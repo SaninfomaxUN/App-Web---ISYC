@@ -1,0 +1,19 @@
+{
+  "name": "app-web",
+  "version": "1.0.0",
+  "description": "Prototipo ISYC - Grupo 8",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SaninfomaxUN/App-Web---ISYC.git"
+  },
+  "author": "ISYC - Grupo 8",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SaninfomaxUN/App-Web---ISYC/issues"
+  },
+  "homepage": "https://github.com/SaninfomaxUN/App-Web---ISYC#readme"
+}
