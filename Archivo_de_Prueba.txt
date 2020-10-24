@@ -1,3 +1,9 @@
 Texto de prueba
 Segunda Edicion
+<<<<<<< HEAD
 Tercera Edicion
+=======
+
+
+Tercera
+>>>>>>> 957cf378cb03188f25db0cbf0bc32ef6b72461d0
