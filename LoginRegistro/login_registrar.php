@@ -17,16 +17,16 @@ Usar "estilos.css" en el ejercicio.
 include("conexion.php");
 
 $email   = $_POST["email"];
-$pass   = $_POST["pass"];
+$passw   = $_POST["passw"];
 
 //Login
 if(isset($_POST["btningresar"]))
 {
-	$query = mysqli_query($conn,"SELECT * FROM contacts WHERE email = '$email' AND phone ='$pass'");
+	$query = mysqli_query($conn,"SELECT * FROM contacts WHERE email = '$email' AND passw ='$passw'");
 	$nr = mysqli_num_rows($query);
 	if($nr==1)
 	{
-		$NombreRec = mysqli_query($conn,"SELECT fullname FROM contacts WHERE email = '$email' AND phone ='$pass'");
+		$NombreRec = mysqli_query($conn,"SELECT fullname FROM contacts WHERE email = '$email' AND passw ='$passw'");
 		$nombre = mysqli_fetch_array($NombreRec);
 		echo "<script> alert('Bienvenid@ $nombre[fullname] !!'); window.location='../index.html' </script>";
 	}else
@@ -39,7 +39,7 @@ if(isset($_POST["btningresar"]))
 if(isset($_POST["btnregistrar"]))
 {	
 	$nombre = $_POST["usuario"];
-	$sqlgrabar = "INSERT INTO contacts(fullname,phone,email) values ('$nombre','$pass','$email')";
+	$sqlgrabar = "INSERT INTO contacts(fullname,passw,email) values ('$nombre','$passw','$email')";
 	
 	if(mysqli_query($conn,$sqlgrabar))
 	{
