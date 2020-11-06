@@ -76,6 +76,9 @@
     top: 5%;
     left: 5%;
 }
+
+/* Simulador */
+
 .demo1 {
     height: 300px;
     display: -webkit-box;
@@ -151,6 +154,8 @@
       opacity: 1;
     }
   }
+
+/*fin Simulador */
 
 /*
 .color_fondo{
