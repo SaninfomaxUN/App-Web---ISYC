@@ -12,7 +12,7 @@ Usar "estilos.css" en el ejercicio.
 
 -->
 
-<?php
+<?php 
 
 include("conexion.php");
 

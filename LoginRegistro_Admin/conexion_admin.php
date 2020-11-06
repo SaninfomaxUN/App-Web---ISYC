@@ -19,9 +19,9 @@ $dbuser = "root";
 $dbpass = "";
 $dbname = "flaskcontacts";
 
-$conn = mysqli_connect($dbhost,$dbuser,$dbpass,$dbname);
+$conn_admin = mysqli_connect($dbhost,$dbuser,$dbpass,$dbname);
 
-if(!$conn)
+if(!$conn_admin)
 {
 	die("No hay conexion:" .mysqli_connect_error());
 }

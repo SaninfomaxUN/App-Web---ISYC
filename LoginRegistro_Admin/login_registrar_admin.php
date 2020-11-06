@@ -16,17 +16,17 @@ Usar "estilos.css" en el ejercicio.
 
 include("conexion_admin.php");
 
-$numId_admin   = $_POST["numId_admin"];
+$numId_admin  = $_POST["numId_admin"];
 $pass_admin   = $_POST["pass_admin"];
 
 //Login 
 if(isset($_POST["btningresar_admin"]))
 {
-	$query_admin = mysqli_query($conn,"SELECT * FROM admin WHERE Id = '$numId_admin' AND Contraseña ='$pass_admin'");
+	$query_admin = mysqli_query($conn_admin,"SELECT * FROM admin WHERE id = '$numId_admin' AND contraseña ='$pass_admin'");
 	$nr_admin = mysqli_num_rows($query_admin);
 	if($nr_admin==1)
 	{
-		$NombreRec_admin = mysqli_query($conn,"SELECT Nombre FROM admin WHERE Id = '$numId_admin' AND Contraseña ='$pass_admin'");
+		$NombreRec_admin = mysqli_query($conn_admin,"SELECT Nombre FROM admin WHERE id = '$numId_admin' AND contraseña ='$pass_admin'");
 		$nombre_admin = mysqli_fetch_array($NombreRec_admin);
 		echo "<script> alert('Bienvenid@ Administrador/a: $nombre_admin[Nombre] !!'); window.location='redireccionar_admin_base.php' </script>";
 	}else
