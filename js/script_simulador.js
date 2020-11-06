@@ -98,8 +98,8 @@ new Vue({
 				this.strokeColor = '#00A854';
 			}
     },
-    facebook: function(){
-			this.percent-=50;
+    wssp: function(){
+			this.percent-=Math.floor(25/6);
       if (this.percent >= 80) {
         this.strokeColor = '#00A854';
       }
@@ -113,6 +113,19 @@ new Vue({
 		},
 		instagram: function(){
 			this.percent-=Math.floor(50/3);
+      if (this.percent >= 80) {
+        this.strokeColor = '#00A854';
+      }
+      else if (this.percent < 80 && this.percent>=50){
+        this.strokeColor = '#FFEE00';
+      }
+      else {
+        this.strokeColor = '#F90417';
+      }
+			if(this.percent<0) this.percent = 0;
+    },
+    facebook: function(){
+			this.percent-=50;
       if (this.percent >= 80) {
         this.strokeColor = '#00A854';
       }
