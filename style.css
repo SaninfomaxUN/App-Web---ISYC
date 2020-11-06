@@ -1,0 +1,75 @@
+.demo1 {
+  height: 300px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+}
+.progress-circle {
+  display: inline-block;
+  position: relative;
+}
+.progress-circle-inner {
+  line-height: 1;
+  background-color: transparent;
+  display: inline-block;
+  width: 100%;
+  border-radius: 100px;
+  vertical-align: middle;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+.progress-circle-trail,
+.progress-circle-path {
+  stroke-linecap: round;
+  -webkit-transition: stroke-dashoffset 0.3s ease 0s, stroke-dasharray 0.3s ease 0s, stroke 0.3s;
+  transition: stroke-dashoffset 0.3s ease 0s, stroke-dasharray 0.3s ease 0s, stroke 0.3s;
+}
+.progress-circle-text {
+  display: block;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  line-height: 1;
+  font-size: 1.4em;
+  color: rgba(0, 0, 0, 0.65);
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 0;
+  font-family: tahoma;
+  margin: 0;
+}
+.progress-success-iconwrap {
+  width: 50px;
+  display: none;
+}
+.progress-success-iconwrap.active {
+  display: inline-block;
+}
+.progress-success-iconwrap.active .progress-success-icon {
+  -webkit-animation: ani-success-effect 0.3s ease both;
+          animation: ani-success-effect 0.3s ease both;
+}
+@-webkit-keyframes ani-success-effect {
+  0% {
+    stroke-dashoffset: 110%;
+    opacity: 0;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    opacity: 1;
+  }
+}
+@keyframes ani-success-effect {
+  0% {
+    stroke-dashoffset: 110%;
+    opacity: 0;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    opacity: 1;
+  }
+}

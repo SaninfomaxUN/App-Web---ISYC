@@ -15,6 +15,8 @@
         <link href="css/Estilos.css" rel="stylesheet">
         <link rel="stylesheet" href="css/heading.css">
         <link rel="stylesheet" href="css/body.css">
+              
+        
     </head>
     <body id="page-top">
 
@@ -39,7 +41,7 @@
                         </li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#Horario">Mi horario</a>
                         </li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#">Configuración</a>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#simulator">Simulador</a>
                         </li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Ayuda</a>
                         </li>
@@ -273,7 +275,88 @@
                 </div>
                 -->
         </section>-->
-        <section class="page-section " id="contact">
+
+        <section class="page-section" id="simulator">
+            <div class="container ">
+                <!-- Simulator Section Heading-->
+                <div class="text-center">
+                    <h2 class="page-section-heading text-secondary d-inline-block mb-0">SIMULADOR CLASE DE 2 HORAS</h2>
+                </div>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- Simulator Section Content-->
+                <div class="row justify-content-center">
+                    <div class="col-lg-4">
+                        <div class="d-flex flex-column align-items-center">
+                            <script type="text/x-templete" id="progress-circle">
+                                <div class="progress-circle">
+                                    <div class="progress-circle-inner" :style="innerStyle">
+                                        <svg viewBox="0 0 100 100">
+                                            <circle class="progress-circle-trail" cx="50" cy="50" r="40" fill="none" :style="trailStyle"></circle>
+                                            <circle class="progress-circle-path" cx="50" cy="50" r="40" fill="none" :style="strokeStyle"></circle>
+                                        </svg>
+                                    </div>
+                                    <span class="progress-circle-text"><slot><slot></span>
+                                </div>
+                                </script>
+                                
+                                
+                                    <script type="text/x-templete" id="main-page">
+                                <div>
+                                    <div class="demo1">
+                                        <progress-circle
+                                            :percent="percent"
+                                            :strokeColor="strokeColor"
+                                            :strokeWidth="strokeWidth"
+                                            :size="size"
+                                        >
+                                            <div v-show="percent!=100">{{percent}}%</div>
+                                            <div class="progress-success-iconwrap" :class="{active: percent===100}">
+                                                <svg viewBox="0 0 80 60">
+                                                    <path d="M10,30 l20,20 l40,-40" fill="none" :stroke="strokeColor" stroke-width="4" stroke-linecap="round" id="successPath" :style="pathStyle" class="progress-success-icon"></path>
+                                                </svg>
+                                            </div>
+                                    </progress-circle>
+                                    </div>
+                                    <div class="text-center">
+                                        <div class="btn-group" role="group" aria-label="Basic example">
+                                            
+                                            <button type="button" class="btn btn-outline-primary btn-sm" @click="dec">-</button>
+                                            <button type="button" class="btn btn-outline-primary btn-sm" @click="add">+</button>
+                                            <button type="button" class="btn btn-outline-primary btn-sm" @click="add100">100%</button>
+
+                                        </div>
+
+                                    </div>
+                                    <!-- APLICACIONES DISTRACTORAS -->
+                                    <div class="text-center">
+                                        <div class="btn-group" role="group" aria-label="Basic example">
+                                            
+                                            <button type="button" class="btn btn-outline-primary btn-sm" @click="facebook">Facebook por 1 hora</button>
+			                                <button type="button" class="btn btn-outline-primary btn-sm" @click="instagram">Instagram por 20 minutos</button>
+
+                                        </div>
+
+                                    </div>
+                                    
+                                </div>
+                                </script>
+                                
+                                    <div id="app"></div>
+                                    <!-- partial -->
+                                    <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.4/vue.min.js'></script>
+                                    <script src="js/script_simulador.js"></script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="page-section bg-primary text-white mb-0" id="contact">
             <div class="container ">
                 <!-- Contact Section Heading-->
                 <div class="text-center">
@@ -290,7 +373,7 @@
                     <div class="col-lg-4">
                         <div class="d-flex flex-column align-items-center">
                             <div class="icon-contact mb-3"><i class="far fa-envelope"></i></div>
-                            <!--<div class="text-muted">Email</div>--><a class="lead font-weight-bold" href="mailto:name@example.com">UNALGrupo8ISYC@Servicioalcliente.com</a>
+                            <!--<div class="text-muted">Email</div>--><a class="lead font-weight-bold text-white" href="mailto:name@example.com">UNALGrupo8ISYC@Servicioalcliente.com</a>
                         </div>
                     </div>
                 </div>

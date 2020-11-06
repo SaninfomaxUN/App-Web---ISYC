@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>CodePen - SVG-progress-circle</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+	<link rel='stylesheet'
+		href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css'>
+	<link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+
+	<!-- partial:index.partial.html -->
+
+	<script type="text/x-templete" id="progress-circle">
+<div class="progress-circle">
+	<div class="progress-circle-inner" :style="innerStyle">
+		<svg viewBox="0 0 100 100">
+			<circle class="progress-circle-trail" cx="50" cy="50" r="40" fill="none" :style="trailStyle"></circle>
+			<circle class="progress-circle-path" cx="50" cy="50" r="40" fill="none" :style="strokeStyle"></circle>
+		</svg>
+	</div>
+	<span class="progress-circle-text"><slot><slot></span>
+</div>
+</script>
+
+
+	<script type="text/x-templete" id="main-page">
+<div>
+	<div class="demo1">
+		<progress-circle
+			:percent="percent"
+			:strokeColor="strokeColor"
+			:strokeWidth="strokeWidth"
+			:size="size"
+		>
+			<div v-show="percent!=100">{{percent}}%</div>
+			<div class="progress-success-iconwrap" :class="{active: percent===100}">
+				<svg viewBox="0 0 80 60">
+					<path d="M10,30 l20,20 l40,-40" fill="none" :stroke="strokeColor" stroke-width="4" stroke-linecap="round" id="successPath" :style="pathStyle" class="progress-success-icon"></path>
+				</svg>
+			</div>
+	</progress-circle>
+	</div>
+	<div class="text-center">
+		<div class="btn-group" role="group" aria-label="Basic example">
+			<button type="button" class="btn btn-outline-primary btn-sm" @click="dec">-</button>
+			<button type="button" class="btn btn-outline-primary btn-sm" @click="add">+</button>
+		</div>
+	</div>
+</div>
+</script>
+
+	<div id="app"></div>
+	<!-- partial -->
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.4/vue.min.js'></script>
+	<script src="./script.js"></script>
+
+</body>
+
+</html>
