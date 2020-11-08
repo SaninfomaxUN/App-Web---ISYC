@@ -83,9 +83,10 @@ $nombre_user = mysqli_fetch_array($consulta_sql);
     <!-- Header (Inicio)-->
     <header class="masthead bg-primary text-white text-center" id="inicio">
         <div class="container d-flex align-items-center flex-column">
-            <!-- Masthead Avatar Image--><img class="masthead-avatar mb-5" src="assets/img/avataaars.svg" alt="">
+            <!-- Masthead Avatar Image-->
+            <img class="masthead-avatar mb-5" src="Images/chico.png" alt="">
             <!-- Masthead Heading-->
-            <h1 class="masthead-heading mb-0">Bienvenido, <?php echo utf8_decode($nombre_user['fullname']); ?> !!</h1>
+            <h1 class="masthead-heading mb-0">Bienvenido, <?php echo ucwords(utf8_decode($nombre_user['fullname'])); ?> !!</h1>
             <!-- Icon Divider-->
             <div class="divider-custom divider-light">
                 <div class="divider-custom-line"></div>
@@ -103,8 +104,7 @@ $nombre_user = mysqli_fetch_array($consulta_sql);
                 <div class="progress-value">90%</div>
             </div>
             <!-- Masthead Subheading-->
-            <p class="pre-wrap masthead-subheading font-weight-light mb-0">&quot;La educación es el arma mas
-                poderosa&quot; </p>
+            <p class="pre-wrap masthead-subheading font-weight-light mb-0">&quot;La educación es el arma mas poderosa&quot; </p>
         </div>
     </header>
     <!-- Mi progreso-->
@@ -126,7 +126,7 @@ $nombre_user = mysqli_fetch_array($consulta_sql);
                 <div class="col-md-6 col-lg-4 mb-5">
                     <div class="card text-center border-warning">
                         <div class="card-header bg-warning text-light">
-                            <h5 class="card-title">Hoy</h5>
+                            <h5 class="card-title">Hoy, <?php setlocale(LC_ALL,"es_CO"); echo date("d"); ?> de <?php setlocale(LC_TIME, "spanish"); echo ucwords(strftime("%B")); ?></h5>
                         </div>
                         <div class="card-body">
                             <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal0">
@@ -191,7 +191,7 @@ $nombre_user = mysqli_fetch_array($consulta_sql);
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
                                 <!-- Portfolio Modal - Title-->
-                                <h2 class="portfolio-modal-title text-warning mb-0">Hoy, 9 de noviembre</h2>
+                                <h2 class="portfolio-modal-title text-warning mb-0">Hoy, <?php setlocale(LC_ALL,"es_CO"); echo date("d"); ?> de <?php setlocale(LC_TIME, "spanish"); echo ucwords(strftime("%B")); ?></h2>
                                 <!-- Icon Divider-->
                                 <div class="divider-custom">
                                     <div class="divider-custom-line"></div>
@@ -471,11 +471,20 @@ $nombre_user = mysqli_fetch_array($consulta_sql);
                         
                                                             </div>
                                                             <!-- APLICACIONES DISTRACTORAS -->
-                                                            <div class="text-center">
+                                                            <div class="text-center espacio-icono">
                                                                 <div class="btn-group" role="group" aria-label="Basic example">
-                        
+                                                                    <div class="input-group-append">
+                                                                        <span class="iconoWhats input-group-text "><i class="tamaño-icono fab fa-whatsapp"></i></span>
+                                                                    </div>
                                                                     <button type="button" class="btn btn-outline-primary btn-sm" @click="wssp">Whatsapp - 5 minutos</button>
+                                                                    <div class="input-group-append">
+                                                                        <span class="instagram input-group-text"><i class="tamaño-icono fab fa-instagram"></i></span>
+                                                                    </div>
                                                                     <button type="button" class="btn btn-outline-primary btn-sm" @click="instagram">Instagram - 20 minutos</button>
+                                                                    <div class="input-group-append">
+                                                                        <span class="iconoFace input-group-text"><i class="tamaño-icono fab fa-facebook"></i></span>
+                                                                    </div>
+                                                                    
                                                                     <button type="button" class="btn btn-outline-primary btn-sm" @click="facebook">Facebook - 1 hora</button>
                         
                                                                 </div>
@@ -672,6 +681,13 @@ $nombre_user = mysqli_fetch_array($consulta_sql);
                     <h4 href='https://www.google.com/' class="mb-4"><a href='https://www.google.com/'>POLITICA DE
                             PRIVACIDAD</a></h4>
                 </div>
+                <div class="col-lg-4">
+                        <h4 class="mb-4">SOBRE Percent</h4>
+                        <img src="Images/Logo_percent Claro.png" class="img-fluid" width="50px" alt="Hola">
+                        <!-- Copyright-->
+                        
+                        <div class="container" style="padding-top:20px;"><small class="pre-wrap">Copyright © Percent 2020<br>Todos los derechos reservados</small></div>
+                </div>
                 <!-- Footer Social Icons-->
                 <div class="col-lg-4 mb-5 mb-lg-0">
                     <h4 class="mb-4">REDES SOCIALES</h4><a class="btn btn-outline-light btn-social mx-1"
@@ -683,19 +699,13 @@ $nombre_user = mysqli_fetch_array($consulta_sql);
                             class="fab fa-fw fa-dribbble"></i></a>
                 </div>
                
-                    <div class="col-lg-4">
-                        <h4 class="mb-4">SOBRE Percent</h4>
-                        <p class="pre-wrap lead mb-0">Freelance is a free to use, MIT licensed Bootstrap theme created by Start Bootstrap</p>
-                    </div>
+                   
                 
             </div>
         </div>
     </footer>
-    <!-- Copyright-->
-    <section class="copyright py-4 text-center text-white">
-        <div class="container"><small class="pre-wrap">Copyright © Percent 2020<br>Todos los derechos reservados</small>
-        </div>
-    </section>
+    
+
     <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes)-->
     <div class="scroll-to-top d-lg-none position-fixed"><a
             class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top"><i
