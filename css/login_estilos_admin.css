@@ -3,10 +3,10 @@ body,
 			margin: 0;
 			padding: 0;
 			height: 100%;
-			/* Fondo 1 background: #8360c3; 
+			background: #8360c3; 
 			background: -webkit-linear-gradient(to right, #2ebf91, #8360c3);  
 			background: linear-gradient(to right, #2ebf91, #8360c3);*/
-			background: #11998e;
+			/*background: #11998e;
 			background: -webkit-linear-gradient(to right, #38ef7d, #11998e);
 			background: linear-gradient(to right, #38ef7d, #11998e);
 
