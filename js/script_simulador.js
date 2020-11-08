@@ -77,8 +77,6 @@ new Vue({
         this.strokeColor = '#F90417';
       }
       
-     
-      
       if (this.percent > 100) this.percent = 100;
     },
     dec: function () {
