@@ -1,3 +1,14 @@
+<?php session_start();
+include __DIR__ . '/LoginRegistro/login_registrar.php';
+include __DIR__ . '/LoginRegistro/conexion.php';
+
+/*Consulta Usuario*/
+$iduser = $_SESSION['id_usuario'];
+$consulta_sql = mysqli_query($conn,"SELECT id, fullname FROM contacts WHERE id = '$iduser'");
+$nombre_user = mysqli_fetch_array($consulta_sql);
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -62,6 +73,9 @@
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
                             href="#contact">Ayuda</a>
                     </li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
+                        href="LoginRegistro/salir.php">Cerrar Sesión <i class="fas fa-door-open"></i></a>
+                </li>
                 </ul>
             </div>
         </div>
@@ -71,7 +85,7 @@
         <div class="container d-flex align-items-center flex-column">
             <!-- Masthead Avatar Image--><img class="masthead-avatar mb-5" src="assets/img/avataaars.svg" alt="">
             <!-- Masthead Heading-->
-            <h1 class="masthead-heading mb-0">Bienvenido,</h1>
+            <h1 class="masthead-heading mb-0">Bienvenido, <?php echo utf8_decode($nombre_user['fullname']); ?> !!</h1>
             <!-- Icon Divider-->
             <div class="divider-custom divider-light">
                 <div class="divider-custom-line"></div>
@@ -319,7 +333,7 @@
                     </div>
                 </div>
                 -->
-    </section>-->
+    </section>
 
     <!-- Simulador-->
     <section class="page-section portfolio" id="simulator">

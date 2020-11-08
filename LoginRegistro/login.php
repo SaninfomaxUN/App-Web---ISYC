@@ -1,4 +1,8 @@
+<?php 
 
+include("login_registrar.php");
+
+?>
 
 <!DOCTYPE html>
 <html>
