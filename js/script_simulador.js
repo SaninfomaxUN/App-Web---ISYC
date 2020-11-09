@@ -70,14 +70,12 @@ new Vue({
       if (this.percent >= 80) {
         this.strokeColor = '#00A854';
       }
-      else if (this.percent < 80 && this.percent>=50){
+      else if (this.percent < 80 && this.percent>=55){
         this.strokeColor = '#FFEE00';
       }
       else {
         this.strokeColor = '#F90417';
       }
-      
-     
       
       if (this.percent > 100) this.percent = 100;
     },
@@ -86,7 +84,7 @@ new Vue({
       if (this.percent >= 80) {
         this.strokeColor = '#00A854';
       }
-      else if (this.percent < 80 && this.percent>=50){
+      else if (this.percent < 80 && this.percent>=55){
         this.strokeColor = '#FFEE00';
       }
       else {
@@ -105,7 +103,7 @@ new Vue({
       if (this.percent >= 80) {
         this.strokeColor = '#00A854';
       }
-      else if (this.percent < 80 && this.percent>=50){
+      else if (this.percent < 80 && this.percent>=55){
         this.strokeColor = '#FFEE00';
       }
       else {
@@ -118,7 +116,7 @@ new Vue({
       if (this.percent >= 80) {
         this.strokeColor = '#00A854';
       }
-      else if (this.percent < 80 && this.percent>=50){
+      else if (this.percent < 80 && this.percent>=55){
         this.strokeColor = '#FFEE00';
       }
       else {
@@ -131,7 +129,7 @@ new Vue({
       if (this.percent >= 80) {
         this.strokeColor = '#00A854';
       }
-      else if (this.percent < 80 && this.percent>=50){
+      else if (this.percent < 80 && this.percent>=55){
         this.strokeColor = '#FFEE00';
       }
       else {
