@@ -1,14 +1,3 @@
-<?php session_start();
-include __DIR__ . '/LoginRegistro/login_registrar.php';
-include __DIR__ . '/LoginRegistro/conexion.php';
-
-/*Consulta Usuario*/
-$iduser = $_SESSION['id_usuario'];
-$consulta_sql = mysqli_query($conn,"SELECT id, fullname FROM contacts WHERE id = '$iduser'");
-$nombre_user = mysqli_fetch_array($consulta_sql);
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -73,9 +62,6 @@ $nombre_user = mysqli_fetch_array($consulta_sql);
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
                             href="#contact">Ayuda</a>
                     </li>
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
-                        href="LoginRegistro/salir.php">Cerrar Sesión <i class="fas fa-door-open"></i></a>
-                </li>
                 </ul>
             </div>
         </div>
@@ -85,7 +71,8 @@ $nombre_user = mysqli_fetch_array($consulta_sql);
         <div class="container d-flex align-items-center flex-column">
             <!-- Masthead Avatar Image--><img class="masthead-avatar mb-5" src="assets/img/avataaars.svg" alt="">
             <!-- Masthead Heading-->
-            <h1 class="masthead-heading mb-0">Bienvenido, <?php echo utf8_decode($nombre_user['fullname']); ?> !!</h1>
+            <h1 class="masthead-heading mb-0">Bienvenido, Usuario!!</h1>
+            <h6 class="mb-0"><br>Ha ingresado sesión de forma anonima</h6>
             <!-- Icon Divider-->
             <div class="divider-custom divider-light">
                 <div class="divider-custom-line"></div>
@@ -322,17 +309,6 @@ $nombre_user = mysqli_fetch_array($consulta_sql);
                 <div class="elfsight-app-aa2dbf55-5af6-47f9-af65-8d50d3bd5eeb"></div>
             </div>
         </div>
-        <!-- About Section Content-->
-        <!--
-                <div class="row">
-                    <div class="col-lg-4 ml-auto">
-                        <p class="pre-wrap lead">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.</p>
-                    </div>
-                    <div class="col-lg-4 mr-auto">
-                        <p class="pre-wrap lead">You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!</p>
-                    </div>
-                </div>
-                -->
     </section>
 
     <!-- Simulador-->
@@ -608,19 +584,16 @@ $nombre_user = mysqli_fetch_array($consulta_sql);
                                                     </div>
                                                     
                                                     <div v-show="percent>=80">
-                                                                <h5 class="text-success"> </br> </br> Estudiante atento</h5>
-                                                                <h5> </br> La mayor parte del tiempo te mantienes atento a tus actividades academicas y no cuentas con muchas distracciones, Felicidades!!</h5>
-                                                            </div>
-                                                          
-                                                            <div v-show="percent<80 && percent>55">
-                                                                <h5 class="text-warning"> </br> </br>Estudiante distraido</h5>
-                                                                <h5> </br> Te distraes un poco durante las actividades academicas, trata de evitar las distraciones y concentrate en tus clases</h5>
-                                                            </div>
+                                                        <h5> </br> </br> Mensaje 0</br> Lorem ipsum dolor sit amet, consectetur adipisicing elit.Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</h5>
+                                                    </div>
+                                                  
+                                                    <div v-show="percent<80 && percent>=50">
+                                                        <h5> </br> </br> Mensaje 1</br> Lorem ipsum dolor sit amet, consectetur adipisicing elit.Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</h5>
+                                                    </div>
 
-                                                            <div v-show="percent<=55">
-                                                                <h5 class="text-danger"> </br> </br>Estudiante Muy distraido</h5>
-                                                                <h5> </br> Te distraes mucho, evita las distracciones a toda costa ya que estas podrian afectar tu apredizaje y rendimiento academico</h5>
-                                                            </div>  
+                                                    <div v-show="percent<50">
+                                                        <h5> </br> </br> Mensaje 2 </br> Lorem ipsum dolor sit amet, consectetur adipisicing elit.Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</h5>
+                                                    </div>  
 
                                                 </div>
                                                 </script>
