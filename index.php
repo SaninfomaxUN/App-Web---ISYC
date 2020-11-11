@@ -104,11 +104,7 @@ $nombre_user = mysqli_fetch_array($consulta_sql);
                 <div class="progress-value">90%</div>
             </div>
             <!-- Masthead Subheading-->
-<<<<<<< HEAD
             <p class="pre-wrap masthead-subheading font-weight-light mb-0">&quot;La educación es el arma mas poderosa&quot; </p>
-=======
-            <p class="pre-wrap masthead-subheading font-weight-light mb-0"> </br> &quot;La educación es el arma mas poderosa&quot; </p>
->>>>>>> 48ae8ad23fcaf3527b94faff93f4c1ab04f4be2f
         </div>
     </header>
     <!-- Mi progreso-->
@@ -139,7 +135,7 @@ $nombre_user = mysqli_fetch_array($consulta_sql);
                                     <div class="portfolio-item-caption-content text-center text-white"><i
                                             class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-fluid align center" src="Images/Concentracion.jpg" alt="Log Cabin" />
+                                <img class="img-fluid align center" src="Images/CalendarioHoy.jpg" alt="Log Cabin" />
 
                             </div>
                         </div>
@@ -157,7 +153,7 @@ $nombre_user = mysqli_fetch_array($consulta_sql);
                                     <div class="portfolio-item-caption-content text-center text-white"><i
                                             class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-fluid align center" src="Images/Semana.jpg" alt="Log Cabin" />
+                                <img class="img-fluid align center" src="Images/CalendarioSemana.jpg" alt="Log Cabin" />
                             </div>
                         </div>
                     </div>
@@ -174,7 +170,7 @@ $nombre_user = mysqli_fetch_array($consulta_sql);
                                     <div class="portfolio-item-caption-content text-center text-white"><i
                                             class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-fluid align center" src="Images/Hombre-Perido.jpg" alt="Log Cabin" />
+                                <img class="img-fluid align center" src="Images/CalendarioSemesv2.jpg" alt="Log Cabin" />
                             </div>
                         </div>
                     </div>
@@ -204,14 +200,14 @@ $nombre_user = mysqli_fetch_array($consulta_sql);
                                 </div>
                                 <!-- Portfolio Modal - Image-->
                                 <!-- Portfolio Modal - Text-->
-                                <div class="progress yellow">
+                                <div class="progress green">
                                     <span class="progress-left">
                                         <span class="progress-bar"></span>
                                     </span>
                                     <span class="progress-right">
                                         <span class="progress-bar"></span>
                                     </span>
-                                    <div class="progress-value">75%</div>
+                                    <div class="progress-value">90%</div>
                                 </div>
                                 <p class="">(Aqui se mostraría las aplicaciones "restringidas" que el usuario ejecuto)
                                 </p>
@@ -250,14 +246,14 @@ $nombre_user = mysqli_fetch_array($consulta_sql);
                                     <div class="divider-custom-line"></div>
                                 </div>
                                 <!-- Portfolio Modal - Image-->
-                                <div class="progress red">
+                                <div class="progress yellow">
                                     <span class="progress-left">
                                         <span class="progress-bar"></span>
                                     </span>
                                     <span class="progress-right">
                                         <span class="progress-bar"></span>
                                     </span>
-                                    <div class="progress-value">90%</div>
+                                    <div class="progress-value">75%</div>
                                 </div>
                                 <!-- Portfolio Modal - Text-->
                                 <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit.Mollitia neque
@@ -293,14 +289,14 @@ $nombre_user = mysqli_fetch_array($consulta_sql);
                                     <div class="divider-custom-line"></div>
                                 </div>
                                 <!-- Portfolio Modal - Image-->
-                                <div class="progress blue">
+                                <div class="progress pink">
                                     <span class="progress-left">
                                         <span class="progress-bar"></span>
                                     </span>
                                     <span class="progress-right">
                                         <span class="progress-bar"></span>
                                     </span>
-                                    <div class="progress-value">90%</div>
+                                    <div class="progress-value">60%</div>
                                 </div>
                                 <!-- Portfolio Modal - Text-->
                                 <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit.Mollitia neque
@@ -368,7 +364,7 @@ $nombre_user = mysqli_fetch_array($consulta_sql);
                                     <div class="portfolio-item-caption-content text-center text-white"><i
                                             class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-fluid align center" src="Images/Calculo.png" alt="Log Cabin" />
+                                <img class="img-fluid align center" src="Images/Calculov2.png" alt="Log Cabin" />
 
                             </div>
                         </div>
@@ -423,108 +419,110 @@ $nombre_user = mysqli_fetch_array($consulta_sql);
                                     <!-- Simulator Section Content-->
                                     <div class="row justify-content-center">
 
-
-
+                                        <!--Scripts Porcentajes Simulacion -->
                                         <script type="text/x-templete" id="progress-circle">
-                                                        <div class="progress-circle">
-                                                            <div class="progress-circle-inner" :style="innerStyle">
-                                                                <svg viewBox="0 0 100 100">
-                                                                    <circle class="progress-circle-trail" cx="50" cy="50" r="40" fill="none" :style="trailStyle"></circle>
-                                                                    <circle class="progress-circle-path" cx="50" cy="50" r="40" fill="none" :style="strokeStyle"></circle>
-                                                                </svg>
-                                                            </div>
-                                                            <span class="progress-circle-text"><slot><slot></span>
-                                                        </div>
-                                                        </script>
-
+                                            <div class="progress-circle">
+                                                <div class="progress-circle-inner" :style="innerStyle">
+                                                    <svg viewBox="0 0 100 100">
+                                                        <circle class="progress-circle-trail" cx="50" cy="50" r="40" fill="none" :style="trailStyle"></circle>
+                                                        <circle class="progress-circle-path" cx="50" cy="50" r="40" fill="none" :style="strokeStyle"></circle>
+                                                    </svg>
+                                                </div>
+                                                <span class="progress-circle-text"><slot><slot></span>
+                                            </div>
+                                        </script>
 
                                         <script type="text/x-templete" id="main-page">
-                                                        <div>
+                                            <div>
 
-                                                            
-                                                            <div class="demo1">
-                                                                <progress-circle
-                                                                    :percent="percent"
-                                                                    :strokeColor="strokeColor"
-                                                                    :strokeWidth="strokeWidth"
-                                                                    :size="size"
-                                                                >
+                                                <div class="demo1">
+                                                    <progress-circle
+                                                        :percent="percent"
+                                                        :strokeColor="strokeColor"
+                                                        :strokeWidth="strokeWidth"
+                                                        :size="size">
 
-                                                                    <div v-show="percent!=100">{{percent}}%</div>
-                                                                    <div class="progress-success-iconwrap" :class="{active: percent===100}">
-                                                                        <svg viewBox="0 0 80 60">
-                                                                            <path d="M10,30 l20,20 l40,-40" fill="none" :stroke="strokeColor" stroke-width="4" stroke-linecap="round" id="successPath" :style="pathStyle" class="progress-success-icon"></path>
-                                                                        </svg>
-                                                                    </div>
-                                                                    
-                                                                </progress-circle>
-
-                                    
+                                                            <div v-show="percent!=100">{{percent}}%</div>
+                                                            <div class="progress-success-iconwrap" :class="{active: percent===100}">
+                                                                <svg viewBox="0 0 80 60">
+                                                                    <path d="M10,30 l20,20 l40,-40" fill="none" :stroke="strokeColor" stroke-width="4" stroke-linecap="round" id="successPath" :style="pathStyle" class="progress-success-icon"></path>
+                                                                </svg>
                                                             </div>
+                                                        
+                                                    </progress-circle>
+                                                </div>
+                                                                                                                                                                                    
+                                                <div class="text-center">
 
-                                                                                                                                                                                                                                            
-                                                            <div class="text-center">
-                                                                
-                                                                <div class="btn-group" role="group" aria-label="Basic example">
-                                                                    
-                                                                    <button type="button" class="btn btn-outline-primary btn-sm" @click="dec">-</button>
-                                                                    <button type="button" class="btn btn-outline-primary btn-sm" @click="add">+</button>
-                                                                    <button type="button" class="btn btn-outline-primary btn-sm" @click="add100">100%</button>
-                        
-                                                                </div>
-                        
-                                                            </div>
-                                                            <!-- APLICACIONES DISTRACTORAS -->
-                                                            <div class="text-center espacio-icono">
-                                                                <div class="btn-group" role="group" aria-label="Basic example">
-                                                                    <div class="input-group-append">
+                                                    <!-- Botones  + - Simulacion-->
+                                                    <div class="btn-group" role="group" aria-label="Basic example">
+                                                        <button type="button" class="btn btn-outline-primary btn-sm" @click="dec">-</button>
+                                                        <button type="button" class="btn btn-outline-primary btn-sm" @click="add">+</button>
+                                                        <button type="button" class="btn btn-outline-primary btn-sm" @click="add100">100%</button>
+                                                    </div>
+                                                </div>
+
+                                                <!-- APLICACIONES DISTRACTORAS -->
+
+                                                <div class="row align-items-center">
+                                                    <div class="espacio-icono">
+                                                        <div class="input-group" role="group">
+                                                            <div class="col-auto">
+                                                                <div class="input-group mb-2">
+                                                                    <div class="input-group-prepend">
                                                                         <span class="iconoWhats input-group-text "><i class="tamaño-icono fab fa-whatsapp"></i></span>
                                                                     </div>
-                                                                    <button type="button" class="btn btn-outline-primary btn-sm" @click="wssp">Whatsapp - 5 minutos</button>
-                                                                    <div class="input-group-append">
+                                                                    <button type="button" class="btn btn-outline-primary btn-sm" @click="wssp">
+                                                                    Whatsapp - 10 min
+                                                                    </button>
+                                                                </div>
+                                                            </div>    
+                                                            <div class="col-auto">
+                                                                <div class="input-group mb-2">
+                                                                    <div class="input-group-prepend">
                                                                         <span class="instagram input-group-text"><i class="tamaño-icono fab fa-instagram"></i></span>
                                                                     </div>
-                                                                    <button type="button" class="btn btn-outline-primary btn-sm" @click="instagram">Instagram - 20 minutos</button>
-                                                                    <div class="input-group-append">
+                                                                    <button type="button" class="btn btn-outline-primary btn-sm" @click="instagram">Instagram - 20 mi</button>
+                                                                </div>
+                                                            </div> 
+                                                            <div class="col-auto">
+                                                                <div class="input-group mb-2">
+                                                                    <div class="input-group-prepend">
                                                                         <span class="iconoFace input-group-text"><i class="tamaño-icono fab fa-facebook"></i></span>
                                                                     </div>
-                                                                    
-                                                                    <button type="button" class="btn btn-outline-primary btn-sm" @click="facebook">Facebook - 1 hora</button>
-                        
-                                                                </div>
-                        
-                                                            </div>
+                                                                    <button type="button" class="btn btn-outline-primary btn-sm" @click="facebook">Facebook </button></div>
+                                                                </div>  
+                                                            </div>  
+                                                        </div> 
+                                                    </div>   
+                                                </div>
 
-                                                            <div v-show="percent>=80">
-                                                                <h5 class="text-success"> </br> </br> Estudiante atento</h5>
-                                                                <h5> </br> La mayor parte del tiempo te mantienes atento a tus actividades academicas y no cuentas con muchas distracciones, Felicidades!!</h5>
-                                                            </div>
-                                                          
-                                                            <div v-show="percent<80 && percent>55">
-                                                                <h5 class="text-warning"> </br> </br>Estudiante distraido</h5>
-                                                                <h5> </br> Te distraes un poco durante las actividades academicas, trata de evitar las distraciones y concentrate en tus clases</h5>
-                                                            </div>
+                                                <div v-show="percent>=80">
+                                                    <h5 class="text-success"> </br> </br> Estudiante atento</h5>
+                                                    <h5> </br> La mayor parte del tiempo te mantienes atento a tus actividades academicas y no cuentas con muchas distracciones, Felicidades!!</h5>
+                                                </div>
+                                                
+                                                <div v-show="percent<80 && percent>55">
+                                                    <h5 class="text-warning"> </br> </br>Estudiante distraido</h5>
+                                                    <h5> </br> Te distraes un poco durante las actividades academicas, trata de evitar las distraciones y concentrate en tus clases</h5>
+                                                </div>
 
-                                                            <div v-show="percent<=55">
-                                                                <h5 class="text-danger"> </br> </br>Estudiante Muy distraido</h5>
-                                                                <h5> </br> Te distraes mucho, evita las distracciones a toda costa ya que estas podrian afectar tu apredizaje y rendimiento academico</h5>
-                                                            </div>                                       
-                                                          
-                                                        </div>
+                                                <div v-show="percent<=55">
+                                                    <h5 class="text-danger"> </br> </br>Estudiante Muy distraido</h5>
+                                                    <h5> </br> Te distraes mucho, evita las distracciones a toda costa ya que estas podrian afectar tu apredizaje y rendimiento academico</h5>
+                                                </div>                                       
+                                                                
+                                            </div>
 
-                                                                                                                                                               
+                                                                                                                                                                    
 
-                                                        </script>
+                                        </script>
 
                                         <div id="app"></div>
                                         <!-- partial -->
                                         <script
                                             src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.4/vue.min.js'></script>
                                         <script src="js/script_simulador.js"></script>
-
-
-
-
                                         <!--
                                             <div class="col-md-6 col-lg-8 mb-5">
                                             
@@ -566,18 +564,16 @@ $nombre_user = mysqli_fetch_array($consulta_sql);
                                 <div class="col-lg-8">
                                     <div class="d-flex flex-column align-items-center">
                                         <script type="text/x-templete" id="progress-circle">
-                                                <div class="progress-circle">
-                                                    <div class="progress-circle-inner" :style="innerStyle">
-                                                        <svg viewBox="0 0 100 100">
-                                                            <circle class="progress-circle-trail" cx="50" cy="50" r="40" fill="none" :style="trailStyle"></circle>
-                                                            <circle class="progress-circle-path" cx="50" cy="50" r="40" fill="none" :style="strokeStyle"></circle>
-                                                        </svg>
-                                                    </div>
-                                                    <span class="progress-circle-text"><slot><slot></span>
+                                            <div class="progress-circle">
+                                                <div class="progress-circle-inner" :style="innerStyle">
+                                                    <svg viewBox="0 0 100 100">
+                                                        <circle class="progress-circle-trail" cx="50" cy="50" r="40" fill="none" :style="trailStyle"></circle>
+                                                        <circle class="progress-circle-path" cx="50" cy="50" r="40" fill="none" :style="strokeStyle"></circle>
+                                                    </svg>
                                                 </div>
-                                                
-                                                </script>
-
+                                                <span class="progress-circle-text"><slot><slot></span>
+                                            </div>
+                                        </script>
 
                                         <script type="text/x-templete" id="main-page">
                                                 <div>
@@ -586,14 +582,13 @@ $nombre_user = mysqli_fetch_array($consulta_sql);
                                                             :percent="percent"
                                                             :strokeColor="strokeColor"
                                                             :strokeWidth="strokeWidth"
-                                                            :size="size"
-                                                        >
-                                                            <div v-show="percent!=100">{{percent}}%</div>
-                                                            <div class="progress-success-iconwrap" :class="{active: percent===100}">
-                                                                <svg viewBox="0 0 80 60">
-                                                                    <path d="M10,30 l20,20 l40,-40" fill="none" :stroke="strokeColor" stroke-width="4" stroke-linecap="round" id="successPath" :style="pathStyle" class="progress-success-icon"></path>
-                                                                </svg>
-                                                            </div>
+                                                            :size="size">
+                                                                <div v-show="percent!=100">{{percent}}%</div>
+                                                                <div class="progress-success-iconwrap" :class="{active: percent===100}">
+                                                                    <svg viewBox="0 0 80 60">
+                                                                        <path d="M10,30 l20,20 l40,-40" fill="none" :stroke="strokeColor" stroke-width="4" stroke-linecap="round" id="successPath" :style="pathStyle" class="progress-success-icon"></path>
+                                                                    </svg>
+                                                                </div>
                                                         </progress-circle>
                                                     </div>
 
@@ -605,39 +600,38 @@ $nombre_user = mysqli_fetch_array($consulta_sql);
                                                             <button type="button" class="btn btn-outline-primary btn-sm" @click="dec">-</button>
                                                             <button type="button" class="btn btn-outline-primary btn-sm" @click="add">+</button>
                                                             <button type="button" class="btn btn-outline-primary btn-sm" @click="add100">100%</button>
-                
                                                         </div>
-                
                                                     </div>
+
                                                     <!-- APLICACIONES DISTRACTORAS -->
+
                                                     <div class="text-center">
                                                         <div class="btn-group" role="group" aria-label="Basic example">
                 
                                                             <button type="button" class="btn btn-outline-primary btn-sm" @click="wssp">Whatsapp - 5 minutos</button>
                                                             <button type="button" class="btn btn-outline-primary btn-sm" @click="instagram">Instagram - 20 minutos</button>
                                                             <button type="button" class="btn btn-outline-primary btn-sm" @click="facebook">Facebook - 1 hora</button>
-                
                                                         </div>
                 
                                                     </div>
                                                     
                                                     <div v-show="percent>=80">
-                                                                <h5 class="text-success"> </br> </br> Estudiante atento</h5>
-                                                                <h5> </br> La mayor parte del tiempo te mantienes atento a tus actividades academicas y no cuentas con muchas distracciones, Felicidades!!</h5>
-                                                            </div>
+                                                        <h5 class="text-success"> </br> </br> Estudiante atento</h5>
+                                                        <h5> </br> La mayor parte del tiempo te mantienes atento a tus actividades academicas y no cuentas con muchas distracciones, Felicidades!!</h5>
+                                                    </div>
                                                           
-                                                            <div v-show="percent<80 && percent>55">
-                                                                <h5 class="text-warning"> </br> </br>Estudiante distraido</h5>
-                                                                <h5> </br> Te distraes un poco durante las actividades academicas, trata de evitar las distraciones y concentrate en tus clases</h5>
-                                                            </div>
+                                                    <div v-show="percent<80 && percent>55">
+                                                        <h5 class="text-warning"> </br> </br>Estudiante distraido</h5>
+                                                        <h5> </br> Te distraes un poco durante las actividades academicas, trata de evitar las distraciones y concentrate en tus clases</h5>
+                                                    </div>
 
-                                                            <div v-show="percent<=55">
-                                                                <h5 class="text-danger"> </br> </br>Estudiante Muy distraido</h5>
-                                                                <h5> </br> Te distraes mucho, evita las distracciones a toda costa ya que estas podrian afectar tu apredizaje y rendimiento academico</h5>
-                                                            </div>  
+                                                    <div v-show="percent<=55">
+                                                        <h5 class="text-danger"> </br> </br>Estudiante Muy distraido</h5>
+                                                        <h5> </br> Te distraes mucho, evita las distracciones a toda costa ya que estas podrian afectar tu apredizaje y rendimiento academico</h5>
+                                                    </div>  
 
                                                 </div>
-                                                </script>
+                                        </script>
 
                                         <div id="app"></div>
                                         <!-- partial -->
@@ -731,6 +725,7 @@ $nombre_user = mysqli_fetch_array($consulta_sql);
     <!-- Contact form JS-->
     <script src="assets/mail/jqBootstrapValidation.js"></script>
     <script src="assets/mail/contact_me.js"></script>
+    <script src="jquery-3.5.1.min.js"></script>
     <!-- Core theme JS-->
 
     <!-- JS simulador-->
