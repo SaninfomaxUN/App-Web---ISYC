@@ -319,8 +319,12 @@ $nombre_user = mysqli_fetch_array($consulta_sql);
         <div class="container">
             <div class="row justify-content-center">
                 <!-- Shedule is from elfsight.com-->
+
+                <!--
                 <script src="https://apps.elfsight.com/p/platform.js" defer></script>
                 <div class="elfsight-app-aa2dbf55-5af6-47f9-af65-8d50d3bd5eeb"></div>
+                -->
+
             </div>
         </div>
         <!-- About Section Content-->
@@ -460,7 +464,21 @@ $nombre_user = mysqli_fetch_array($consulta_sql);
                                                         <button type="button" class="btn btn-outline-primary btn-sm" @click="add">+</button>
                                                         <button type="button" class="btn btn-outline-primary btn-sm" @click="add100">100%</button>
                                                     </div>
+
+                                                    <form class="form-inline">
+                                                        <div class="form-group mb-1">
+                                                            <h6>Ingrese la cantidad en minutos</h6>
+                                                        </div>
+                                                        <div class="form-group mx-sm-4 mb-1">
+                                                            <label for="inputMinutes" class="sr-only">Minutos</label>
+                                                            <input type="number" class="form-control" id="inputMinutes" placeholder="Minutos">
+                                                        </div>
+                                                        <button type="button" class="btn btn-outline-primary btn-sm" @click="redu">Reducir</button>
+                                                    </form>
+
                                                 </div>
+
+                                                
 
                                                 <!-- APLICACIONES DISTRACTORAS -->
 
@@ -473,7 +491,7 @@ $nombre_user = mysqli_fetch_array($consulta_sql);
                                                                         <span class="iconoWhats input-group-text "><i class="tamaño-icono fab fa-whatsapp"></i></span>
                                                                     </div>
                                                                     <button type="button" class="btn btn-outline-primary btn-sm" @click="wssp">
-                                                                    Whatsapp - 10 min
+                                                                    Whatsapp - 5 min
                                                                     </button>
                                                                 </div>
                                                             </div>    
@@ -482,7 +500,7 @@ $nombre_user = mysqli_fetch_array($consulta_sql);
                                                                     <div class="input-group-prepend">
                                                                         <span class="instagram input-group-text"><i class="tamaño-icono fab fa-instagram"></i></span>
                                                                     </div>
-                                                                    <button type="button" class="btn btn-outline-primary btn-sm" @click="instagram">Instagram - 20 mi</button>
+                                                                    <button type="button" class="btn btn-outline-primary btn-sm" @click="instagram">Instagram - 20 min</button>
                                                                 </div>
                                                             </div> 
                                                             <div class="col-auto">
@@ -490,28 +508,25 @@ $nombre_user = mysqli_fetch_array($consulta_sql);
                                                                     <div class="input-group-prepend">
                                                                         <span class="iconoFace input-group-text"><i class="tamaño-icono fab fa-facebook"></i></span>
                                                                     </div>
-                                                                    <button type="button" class="btn btn-outline-primary btn-sm" @click="facebook">Facebook </button></div>
+                                                                    <button type="button" class="btn btn-outline-primary btn-sm" @click="facebook">Facebook - 1 hora </button></div>
                                                                 </div>  
                                                             </div>  
                                                         </div> 
-                                                    </div>   
-                                                </div>
-
-                                                <div v-show="percent>=80">
-                                                    <h5 class="text-success"> </br> </br> Estudiante atento</h5>
-                                                    <h5> </br> La mayor parte del tiempo te mantienes atento a tus actividades academicas y no cuentas con muchas distracciones, Felicidades!!</h5>
-                                                </div>
+                                                    </div>
+                                                    <div v-show="percent>=80">
+                                                        <h5 class="text-success"> </br> </br> Estudiante atento</h5>
+                                                        <h5> </br> La mayor parte del tiempo te mantienes atento a tus actividades academicas y no cuentas con muchas distracciones, Felicidades!!</h5>
+                                                    </div>
                                                 
-                                                <div v-show="percent<80 && percent>55">
-                                                    <h5 class="text-warning"> </br> </br>Estudiante distraido</h5>
-                                                    <h5> </br> Te distraes un poco durante las actividades academicas, trata de evitar las distraciones y concentrate en tus clases</h5>
-                                                </div>
+                                                    <div v-show="percent<80 && percent>55">
+                                                        <h5 class="text-warning"> </br> </br>Estudiante distraido</h5>
+                                                        <h5> </br> Te distraes un poco durante las actividades academicas, trata de evitar las distraciones y concentrate en tus clases</h5>
+                                                    </div>
 
-                                                <div v-show="percent<=55">
-                                                    <h5 class="text-danger"> </br> </br>Estudiante Muy distraido</h5>
-                                                    <h5> </br> Te distraes mucho, evita las distracciones a toda costa ya que estas podrian afectar tu apredizaje y rendimiento academico</h5>
-                                                </div>                                       
-                                                                
+                                                    <div v-show="percent<=55">
+                                                        <h5 class="text-danger"> </br> </br>Estudiante Muy distraido</h5>
+                                                    <h5> </br> Te distraes mucho, evita las distracciones a toda costa ya que estas podrian afectar tu apredizaje y rendimiento academico</h5>   
+                                                </div>                                                                                                                                                  
                                             </div>
 
                                                                                                                                                                     

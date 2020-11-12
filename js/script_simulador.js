@@ -27,7 +27,8 @@ Vue.component('progress-circle', {
 
     'trailWidth': {
       type: Number,
-      default: 8 } },
+      default: 8 },    
+    },
 
 
   template: '#progress-circle',
@@ -62,7 +63,7 @@ new Vue({
     strokeColor: '#00A854',
     strokeWidth: 4,
     size: 250,
-    pathLen: 0 },
+    pathLen: 0},
 
   methods: {
     add: function () {
@@ -97,6 +98,20 @@ new Vue({
 			if(this.percent === 100){
 				this.strokeColor = '#00A854';
 			}
+    },
+    redu: function () {
+      reduMinutes=Math.floor(((document.getElementById('inputMinutes').value)*100)/120);
+      this.percent -= reduMinutes;
+      if (this.percent >= 80) {
+        this.strokeColor = '#00A854';
+      }
+      else if (this.percent < 80 && this.percent>=55){
+        this.strokeColor = '#FFEE00';
+      }
+      else {
+        this.strokeColor = '#F90417';
+      }
+      if (this.percent < 0) this.percent = 0;
     },
     wssp: function(){
 			this.percent-=Math.floor(25/6);
@@ -142,7 +157,7 @@ new Vue({
   mounted: function () {
     this.$nextTick(() => {
       this.pathLen = document.getElementById('successPath').getTotalLength();
-      // console.log(this.pathLen)
+      //console.log(this.pathLen)
     });
   },
   computed: {
