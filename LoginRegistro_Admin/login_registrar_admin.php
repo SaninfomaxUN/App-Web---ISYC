@@ -24,8 +24,7 @@ if(isset($_POST["btningresar_admin"]))
 {
 	$query_admin = mysqli_query($conn_admin,"SELECT * FROM admin WHERE id = '$numId_admin' AND contraseña ='$pass_admin'");
 	$nr_admin = mysqli_num_rows($query_admin);
-	echo $nr_admin
-	/*if($nr_admin==1)
+	if($nr_admin==1)
 	{
 		$NombreRec_admin = mysqli_query($conn_admin,"SELECT Nombre FROM admin WHERE id = '$numId_admin' AND contraseña ='$pass_admin'");
 		$nombre_admin = mysqli_fetch_array($NombreRec_admin);
@@ -34,9 +33,7 @@ if(isset($_POST["btningresar_admin"]))
 	{
 		echo "<script> alert('Usuario y/o Contraseña incorrectos. Por favor intente de nuevo.'); window.location='login_admin.html' </script>";
 	}
-	*/
 }
-
 
 /*Registrar
 if(isset($_POST["btnregistrar_admin"]))

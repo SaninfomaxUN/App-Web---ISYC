@@ -1,3 +1,13 @@
+.padding-Iconos{
+    padding:0px!important
+}
+.borde-portfolio{
+    padding: 0.3rem 0.3rem;
+}
+.padding-portfolio{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
 .margen-Hoy{ 
     padding-bottom: 10px;
 }
@@ -5,7 +15,7 @@
     margin-bottom: 0px;
 }
 .tamaño-icono{
-    font-size: 30px;
+    font-size: 40px;
 }
 .iconoWhats{
     background-color: green;
@@ -15,22 +25,45 @@
     background-color: #3b5998;
     color: white;
 }
+.iconoTwit{
+    background-color: #00acee;
+    color: white;
+}
+.iconoYou{
+    background-color: #c4302b;
+    color: white;
+}
+.iconoMes{
+    background-color: #00B2FF;
+    color: white;
+}
+.iconoTik{
+    background-color: black;
+    color: white;
+}
+
+.iconoGam{
+    background-color: #66FF00;
+    color: white;
+}
+.icono:hover {
+    background-color:black;
+    background: black;
+}
 .instagram {
     display: inline-block;
-    /*width: 250px;
-    height: 250px;*/
     text-align: center;
-    /*border-radius: 40px;*/
     color: #fff;
-    /*font-size: 220px;
-    line-height: 250px;*/
     vertical-align: middle;
     background: #d6249f;
     background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
-    /*box-shadow: 0px 3px 10px rgba(0,0,0,.25);*/
-  }
+}
 .espacio-icono{
-    padding-top: 20px;
+    padding-top: 5px;
+}
+
+.mifuente{
+    word-break: break-all;
 }
 .progress{
     width: 150px;

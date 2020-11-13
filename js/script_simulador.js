@@ -27,8 +27,7 @@ Vue.component('progress-circle', {
 
     'trailWidth': {
       type: Number,
-      default: 8 },    
-    },
+      default: 8 } },
 
 
   template: '#progress-circle',
@@ -54,7 +53,7 @@ Vue.component('progress-circle', {
 
 
 
-// start app
+// Script Calculo
 new Vue({
   el: '#app',
   template: '#main-page',
@@ -63,7 +62,7 @@ new Vue({
     strokeColor: '#00A854',
     strokeWidth: 4,
     size: 250,
-    pathLen: 0},
+    pathLen: 0 },
 
   methods: {
     add: function () {
@@ -79,6 +78,20 @@ new Vue({
       }
       
       if (this.percent > 100) this.percent = 100;
+    },
+    redu: function () {
+      reduMinutes=Math.floor(((document.getElementById('inputMinutes').value)*100)/120);
+      this.percent -= reduMinutes;
+      if (this.percent >= 80) {
+        this.strokeColor = '#00A854';
+      }
+      else if (this.percent < 80 && this.percent>=55){
+        this.strokeColor = '#FFEE00';
+      }
+      else {
+        this.strokeColor = '#F90417';
+      }
+      if (this.percent < 0) this.percent = 0;
     },
     dec: function () {
       this.percent -= 10;
@@ -98,21 +111,7 @@ new Vue({
 			if(this.percent === 100){
 				this.strokeColor = '#00A854';
 			}
-    },
-    redu: function () {
-      reduMinutes=Math.floor(((document.getElementById('inputMinutes').value)*100)/120);
-      this.percent -= reduMinutes;
-      if (this.percent >= 80) {
-        this.strokeColor = '#00A854';
-      }
-      else if (this.percent < 80 && this.percent>=55){
-        this.strokeColor = '#FFEE00';
-      }
-      else {
-        this.strokeColor = '#F90417';
-      }
-      if (this.percent < 0) this.percent = 0;
-    },
+    },/*
     wssp: function(){
 			this.percent-=Math.floor(25/6);
       if (this.percent >= 80) {
@@ -151,13 +150,127 @@ new Vue({
         this.strokeColor = '#F90417';
       }
 			if(this.percent<0) this.percent = 0;
-		},
+		},*/
    },
 
   mounted: function () {
     this.$nextTick(() => {
       this.pathLen = document.getElementById('successPath').getTotalLength();
-      //console.log(this.pathLen)
+      // console.log(this.pathLen)
+    });
+  },
+  computed: {
+    pathStyle: function () {
+      const offset = this.percent === 100 ? 0 : this.pathLen;
+      return {
+        'stroke-dasharray': `${this.pathLen}px ${this.pathLen}px` };
+
+    } } });
+
+// Script Programacion
+new Vue({
+  el: '#app2',
+  template: '#main-page2',
+  data: {
+    percent: 100,
+    strokeColor: '#00A854',
+    strokeWidth: 4,
+    size: 250,
+    pathLen: 0 },
+
+  methods: {
+    add: function () {
+      this.percent += 10;
+      if (this.percent >= 80) {
+        this.strokeColor = '#00A854';
+      }
+      else if (this.percent < 80 && this.percent>=55){
+        this.strokeColor = '#FFEE00';
+      }
+      else {
+        this.strokeColor = '#F90417';
+      }
+      
+      if (this.percent > 100) this.percent = 100;
+    },
+    redu2: function () {
+      reduMinutes=Math.floor(((document.getElementById('inputMinutes2').value)*100)/60);
+      this.percent -= reduMinutes;
+      if (this.percent >= 80) {
+        this.strokeColor = '#00A854';
+      }
+      else if (this.percent < 80 && this.percent>=55){
+        this.strokeColor = '#FFEE00';
+      }
+      else {
+        this.strokeColor = '#F90417';
+      }
+      if (this.percent < 0) this.percent = 0;
+    },
+    dec: function () {
+      this.percent -= 10;
+      if (this.percent >= 80) {
+        this.strokeColor = '#00A854';
+      }
+      else if (this.percent < 80 && this.percent>=55){
+        this.strokeColor = '#FFEE00';
+      }
+      else {
+        this.strokeColor = '#F90417';
+      }
+      if (this.percent < 0) this.percent = 0;
+    },
+    add100: function () {
+			this.percent = 100;
+			if(this.percent === 100){
+				this.strokeColor = '#00A854';
+			}
+    },/*
+    wssp: function(){
+			this.percent-=Math.floor(25/6);
+      if (this.percent >= 80) {
+        this.strokeColor = '#00A854';
+      }
+      else if (this.percent < 80 && this.percent>=55){
+        this.strokeColor = '#FFEE00';
+      }
+      else {
+        this.strokeColor = '#F90417';
+      }
+			if(this.percent<0) this.percent = 0;
+		},
+		instagram: function(){
+			this.percent-=Math.floor(50/3);
+      if (this.percent >= 80) {
+        this.strokeColor = '#00A854';
+      }
+      else if (this.percent < 80 && this.percent>=55){
+        this.strokeColor = '#FFEE00';
+      }
+      else {
+        this.strokeColor = '#F90417';
+      }
+			if(this.percent<0) this.percent = 0;
+    },
+    facebook: function(){
+			this.percent-=50;
+      if (this.percent >= 80) {
+        this.strokeColor = '#00A854';
+      }
+      else if (this.percent < 80 && this.percent>=55){
+        this.strokeColor = '#FFEE00';
+      }
+      else {
+        this.strokeColor = '#F90417';
+      }
+			if(this.percent<0) this.percent = 0;
+		},*/
+   },
+
+  mounted: function () {
+    this.$nextTick(() => {
+      this.pathLen = document.getElementById('successPath').getTotalLength();
+      // console.log(this.pathLen)
     });
   },
   computed: {
