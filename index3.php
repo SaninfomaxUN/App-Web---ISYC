@@ -29,7 +29,7 @@ $nombre_user = mysqli_fetch_array($consulta_sql);
     <link href="css/Estilos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/heading.css">
     <link rel="stylesheet" href="css/body.css">
-    <link rel="Shortcut Icon" href="Images/Logo_percent.ico" type="image/x-icon"/>
+
 
 </head>
 
@@ -90,7 +90,7 @@ $nombre_user = mysqli_fetch_array($consulta_sql);
             <!-- Icon Divider-->
             <div class="divider-custom divider-light">
                 <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fas fa-user-graduate"></i></div>
+                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                 <div class="divider-custom-line"></div>
             </div>
             <!--Barra Progreso-->
@@ -117,7 +117,7 @@ $nombre_user = mysqli_fetch_array($consulta_sql);
             <!-- Icon Divider-->
             <div class="divider-custom">
                 <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fas fa-award"></i></div>
+                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                 <div class="divider-custom-line"></div>
             </div>
             <!-- Portfolio Grid Items-->
@@ -183,18 +183,19 @@ $nombre_user = mysqli_fetch_array($consulta_sql);
     <div class="portfolio-modal modal fade" id="portfolioModal0" tabindex="-1" role="dialog"
         aria-labelledby="#portfolioModal0Label" aria-hidden="true">
         <div class="modal-dialog modal-xl" role="document">
-            <div class="modal-content rounded border border-warning">
-                <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fas fa-times"></i></span></button>
-                <div class="modal-body text-center" style="border-width:20px; padding: 0.7rem 0.7rem!important; background-color:#ffc107!important;">
-                    <div class="container bg-light">
+            <div class="modal-content">
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i
+                            class="fas fa-times"></i></span></button>
+                <div class="modal-body text-center">
+                    <div class="container">
                         <div class="row justify-content-center">
-                            <div class="col-lg-8 padding-portfolio">
+                            <div class="col-lg-8">
                                 <!-- Portfolio Modal - Title-->
                                 <h2 class="portfolio-modal-title text-warning mb-0">Hoy, <?php setlocale(LC_ALL,"es_CO"); echo date("d"); ?> de <?php setlocale(LC_TIME, "spanish"); echo ucwords(strftime("%B")); ?></h2>
                                 <!-- Icon Divider-->
                                 <div class="divider-custom">
                                     <div class="divider-custom-line"></div>
-                                    <div class="divider-custom-icon"><i class="fas fa-calendar-day"></i></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                                     <div class="divider-custom-line"></div>
                                 </div>
                                 <!-- Portfolio Modal - Image-->
@@ -216,7 +217,9 @@ $nombre_user = mysqli_fetch_array($consulta_sql);
                                     <img class="img-fluid align center" src="Images/Instagram.png" width="105px"
                                         alt="Log Cabin" />
                                 </div>
-                                </div>
+                                <button class="btn btn-primary" href="#" data-dismiss="modal"><i
+                                        class="fas fa-times fa-fw"></i>Cerrar</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -227,19 +230,19 @@ $nombre_user = mysqli_fetch_array($consulta_sql);
     <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog"
         aria-labelledby="#portfolioModal1Label" aria-hidden="true">
         <div class="modal-dialog modal-xl" role="document">
-            <div class="modal-content rounded border border-danger">
+            <div class="modal-content">
                 <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i
                             class="fas fa-times"></i></span></button>
-                <div class="modal-body borde-portfolio text-center" style="border-width:20px; padding: 0.7rem 0.7rem!important; background-color:#dc3545!important;">
-                    <div class="container bg-light">
+                <div class="modal-body text-center">
+                    <div class="container">
                         <div class="row justify-content-center">
-                            <div class="col-lg-8 padding-portfolio">
+                            <div class="col-lg-8">
                                 <!-- Portfolio Modal - Title-->
-                                <h2 class="portfolio-modal-title text-danger mb-0">Semana 5</h2>
+                                <h2 class="portfolio-modal-title text-danger mb-0">Semana ...5</h2>
                                 <!-- Icon Divider-->
                                 <div class="divider-custom">
                                     <div class="divider-custom-line"></div>
-                                    <div class="divider-custom-icon"><i class="fas fa-calendar-week"></i></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                                     <div class="divider-custom-line"></div>
                                 </div>
                                 <!-- Portfolio Modal - Image-->
@@ -257,7 +260,9 @@ $nombre_user = mysqli_fetch_array($consulta_sql);
                                     assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam
                                     velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
                                 </p>
-                                </div>
+                                <button class="btn btn-primary" href="#" data-dismiss="modal"><i
+                                        class="fas fa-times fa-fw"></i>Close Window</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -268,19 +273,19 @@ $nombre_user = mysqli_fetch_array($consulta_sql);
     <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog"
         aria-labelledby="#portfolioModal2Label" aria-hidden="true">
         <div class="modal-dialog modal-xl" role="document">
-            <div class="modal-content rounded border border-info">
+            <div class="modal-content">
                 <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i
                             class="fas fa-times"></i></span></button>
-                <div class="modal-body text-center" style="border-width:20px; padding: 0.7rem 0.7rem!important; background-color:#17a2b8!important;">
-                    <div class="container bg-light">
+                <div class="modal-body text-center">
+                    <div class="container">
                         <div class="row justify-content-center">
-                            <div class="col-lg-8 padding-portfolio">
+                            <div class="col-lg-8">
                                 <!-- Portfolio Modal - Title-->
-                                <h2 class="portfolio-modal-title text-info mb-0">Periodo 3</h2>
+                                <h2 class="portfolio-modal-title text-info mb-0">Periodo ...3</h2>
                                 <!-- Icon Divider-->
                                 <div class="divider-custom">
                                     <div class="divider-custom-line"></div>
-                                    <div class="divider-custom-icon"><i class="fas fa-calendar-alt"></i></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                                     <div class="divider-custom-line"></div>
                                 </div>
                                 <!-- Portfolio Modal - Image-->
@@ -298,7 +303,9 @@ $nombre_user = mysqli_fetch_array($consulta_sql);
                                     assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam
                                     velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
                                 </p>
-                               </div>
+                                <button class="btn btn-primary" href="#" data-dismiss="modal"><i
+                                        class="fas fa-times fa-fw"></i>Close Window</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -311,10 +318,13 @@ $nombre_user = mysqli_fetch_array($consulta_sql);
         <!-- Shedule Section Heading-->
         <div class="container">
             <div class="row justify-content-center">
-                <!-- Shedule is from elfsight.com
+                <!-- Shedule is from elfsight.com-->
+
+                <!--
                 <script src="https://apps.elfsight.com/p/platform.js" defer></script>
                 <div class="elfsight-app-aa2dbf55-5af6-47f9-af65-8d50d3bd5eeb"></div>
                 -->
+
             </div>
         </div>
         <!-- About Section Content-->
@@ -340,7 +350,7 @@ $nombre_user = mysqli_fetch_array($consulta_sql);
             <!-- Icon Divider-->
             <div class="divider-custom">
                 <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fas fa-play-circle"></i></div>
+                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                 <div class="divider-custom-line"></div>
             </div>
             <!-- Portfolio Grid Items-->
@@ -390,24 +400,24 @@ $nombre_user = mysqli_fetch_array($consulta_sql);
     <div class="portfolio-modal modal fade" id="SimulacionCalculo" tabindex="-1" role="dialog"
         aria-labelledby="#SimulacionCalculoLabel" aria-hidden="true">
         <div class="modal-dialog modal-xl" role="document">
-            <div class="modal-content rounded border border-success">
+            <div class="modal-content">
                 <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i
                             class="fas fa-times"></i></span></button>
-                <div class="modal-body borde-portfolio text-center" style="border-width:20px; padding: 0.7rem 0.7rem!important; background-color:green!important;">
-                    <div class="container bg-light">
+                <div class="modal-body text-center">
+                    <div class="container">
                         <div class="row justify-content-center">
-                            <div class="col-lg-8 padding-portfolio"> 
+                            <div class="col-lg-8">
                                 <!-- Title-->
                                 <h2 class="portfolio-modal-title text-success mb-0">Calculo</h2>
                                 <!-- Icon Divider-->
                                 <div class="divider-custom">
                                     <div class="divider-custom-line"></div>
-                                    <div class="divider-custom-icon"><i class="fas fa-square-root-alt"></i></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                                     <div class="divider-custom-line"></div>
                                 </div>
 
                                 <!-- Portfolio Modal - content-->
-                                <div class="container ">
+                                <div class="container">
                                     <!-- Simulator Section Heading-->
 
                                     <!-- Simulator Section Content-->
@@ -446,136 +456,116 @@ $nombre_user = mysqli_fetch_array($consulta_sql);
                                                     </progress-circle>
                                                 </div>
                                                                                                                                                                                     
-                                                <div class="text-center"  style="padding-bottom:20px;"">
-
+                                                
+                                                <div class="text-center">
                                                     <!-- Botones  + - Simulacion-->
                                                     <div class="btn-group" role="group" aria-label="Basic example">
-                                                    <!--
                                                         <button type="button" class="btn btn-outline-primary btn-sm" @click="dec">-</button>
                                                         <button type="button" class="btn btn-outline-primary btn-sm" @click="add">+</button>
-                                                    -->
                                                         <button type="button" class="btn btn-outline-primary btn-sm" @click="Restart">Restablecer</button>
                                                     </div>
-                                                    
-                                                </div>
 
-                                                <!-- APLICACIONES DISTRACTORAS -->
-                                                <div class="card ">
-                                                    <div class="container card-header" style="padding-top:20px;">
-
-                                                        <form id="horasForm1">
-                                                            <div class="row justify-content-center align-items-center">
-                                                                <div class="col-md-6 col-sm-12 form-group mb-2" style="padding-right:0px;">
-                                                                    <h6>Duracion de la clase:</h6>
+                                                    <div class="container" style="padding-top:20px;">
+                                                        <div class="row justify-content-md-center">
+                                                            <form class="form-inline" id="horasForm1">
+                                                                <div class="form-group mb-1">
+                                                                    <h6>Duracion de la clase</h6>
                                                                 </div>
-                                                                <div class="col-md-4 col-sm-12 form-group mb-2" style="padding-left:0px;">
+                                                                <div class="form-group mx-sm-4 mb-1">
                                                                     <label for="inputHoras" class="sr-only">Horas</label>
                                                                     <input type="number" class="form-control" id="inputHoras" placeholder="Horas">
-                                                                </div>
-                                                            </div>
-                                                        </form>
-
-                                                        <form id="minutosForm1">
-                                                            <div class="row justify-content-center align-items-center">
-                                                                <div class="col-md-6 col-sm-12 form-group mb-2" style="padding-right:0px;">
-                                                                    <h6>Cantidad de minutos en aplicación:</h6>
-                                                                </div>
-                                                                <div class="col-md-4 col-sm-12 form-group mb-2" style="padding-left:0px;">
-                                                                    <label for="inputMinutes" class="sr-only">Minutos</label>
-                                                                    <input type="number" class="form-control" id="inputMinutes" placeholder="Minutos">
-                                                                </div>
-                                                            </div>
-                                                        </form>
-                                                       
-                                                    </div>
-                                                    <div class="card-body" style="padding-top:10px;">
-                                                        <div class="container">
-                                                            <div style="padding-top:10px;">
-                                                                <h5>Selecciona la aplicacion distractora:</h5>
-                                                            </div>
-                                                            <div class="d-flex justify-content-center espacio-icono">
-                                                                
-                                                                <div class="row" role="group" id="BotonesIconos">
-                                                                    <div class="mr-2">
-                                                                            <button type="button" class="btn btn-sm padding-Iconos" @click="wssp">
-                                                                                <span class="iconoWhats input-group-text icono"><i class="tamaño-icono fab fa-whatsapp"></i></span>
-                                                                            </button>
-                                                                            <input type="number" class="form-control" id="PorcentajeWssp" value="0" readonly style="width:65px">
-                                                                    </div> 
-                                                                    <div class="mr-2">
-                                                                            <button type="button" class="btn btn-sm padding-Iconos" @click="facebook">
-                                                                                <span class="iconoFace input-group-text icono"><i class="tamaño-icono fab fa-facebook"></i></span>
-                                                                            </button>
-                                                                            <input type="number" class="form-control" id="PorcentajeFace" value="0" readonly style="width:65px">
-                                                                    </div>                                                 
-                                                                    <div class="mr-2">
-                                                                            <button type="button" class="btn btn-sm padding-Iconos" @click="instagram">
-                                                                                <span class="instagram icono input-group-text"><i class="tamaño-icono fab fa-instagram"></i></span>
-                                                                            </button>
-                                                                            <input type="number" class="form-control" id="PorcentajeInsta" value="0" readonly style="width:65px">
-                                                                    </div>
-                                                                    <div class="mr-2">
-                                                                            <button type="button" class="btn btn-sm padding-Iconos" @click="twitter">
-                                                                                <span class="iconoTwit input-group-text icono"><i class="tamaño-icono fab fa-twitter"></i></span>
-                                                                            </button>
-                                                                            <input type="number" class="form-control" id="PorcentajeTw" value="0" readonly style="width:65px">
-                                                                    </div>
-                                                                    <div class="mr-2">
-                                                                            <button type="button" class="btn btn-sm padding-Iconos" @click="youtube">
-                                                                                <span class="iconoYou input-group-text icono"><i class="tamaño-icono fab fa-youtube"></i></span>
-                                                                            </button>
-                                                                            <input type="number" class="form-control" id="PorcentajeYout" value="0" readonly style="width:65px">
-                                                                    </div>
-                                                                    <div class="mr-2">
-                                                                            <button type="button" class="btn btn-sm padding-Iconos" @click="tiktok">
-                                                                                <span class="iconoTik input-group-text icono"><span class="iconify tamaño-icono" data-icon="simple-icons:tiktok" data-inline="false"></span></span>
-                                                                            </button>
-                                                                            <input type="number" class="form-control" id="PorcentajeTik" value="0" readonly style="width:65px">
-                                                                    </div>
-                                                                    <div class="mr-2">
-                                                                            <button type="button" class="btn btn-sm padding-Iconos" @click="game">
-                                                                                <span class="iconoGam input-group-text icono"><i class="tamaño-icono fas fa-gamepad"></i></span>
-                                                                            </button>
-                                                                            <input type="number" class="form-control" id="PorcentajeGame" value="0" readonly style="width:65px">
-                                                                    </div> 
-                                                                </div>
-                                                            </div>
+                                                                </div>  
+                                                            </form>
                                                         </div>
                                                     </div>
-                                                </div>
-                                                
-                                                
-                                                <div v-show="percent>=80">
-                                                    <h5 class="text-success" style="font-size:30px;"> </br> </br> Estudiante atento  <i class="fas fa-check-circle"></i></h5>
-                                                    <h5 style="font-size:20px;"> </br> La mayor parte del tiempo te mantienes atento a tus actividades academicas y no cuentas con muchas distracciones, Felicidades!!</h5>
-                                                </div>
-                                                
-                                                <div v-show="percent<80 && percent>55">
-                                                    <h5 class="text-warning" style="font-size:30px;"> </br> </br>Estudiante distraido <i class="fas fa-exclamation-circle"></i></h5>
-                                                    <h5 style="font-size:20px;"> </br> Te distraes un poco durante las actividades academicas, trata de evitar las distraciones y concentrate en tus clases</h5>
-                                                    <div style="padding-top:40px;">
-                                                        <button class="btn btn-primary" id="tip">Tip<i class="far fa-calendar-check"></i></button>
+                                                    
+                                                        
+                                                    <div class="container" style="padding-top:10px;">
+                                                        <div class="row justify-content-md-center">
+                                                            <form class="form-inline" id="minutosForm1">
+                                                                <div class="form-group mb-2">
+                                                                    <h6>Cantidad de tiempo en aplicacion</h6>
+                                                                </div>
+                                                                <div class="form-group mx-sm-4 mb-2">
+                                                                    <label for="inputMinutes" class="sr-only">Minutos</label>
+                                                                    <input type="number" class="form-control" id="inputMinutes" placeholder="Minutos">
+                                                                </div>          
+                                                            </form>
+                                                        </div>
+                                                <div>
+                                                       
+                                                    
+                                                <!-- APLICACIONES DISTRACTORAS -->
+                                                    <div class="container">
+                                                        <div class="row justify-content-md-center">
+                                                            <div class="espacio-icono">
+                                                                <div class="input-group" role="group">
+                                                                    <div class="col-auto">
+                                                                        <div class="input-group mb-2">
+                                                                            <div class="input-group-prepend">
+                                                                                <span class="iconoWhats input-group-text "><i class="tamaño-icono fab fa-whatsapp"></i></span>
+                                                                            </div>
+                                                                            <button type="button" class="btn btn-outline-primary btn-sm" @click="redu">Whatsapp</button>
+                                                                            <input type="number" class="form-control" id="tiempowssp" value="0" readonly>
+                                                                        </div>
+                                                                    </div>    
+                                                                    <div class="col-auto">
+                                                                        <div class="input-group mb-2">
+                                                                            <div class="input-group-prepend">
+                                                                                <span class="instagram input-group-text"><i class="tamaño-icono fab fa-instagram"></i></span>
+                                                                            </div>
+                                                                            <button type="button" class="btn btn-outline-primary btn-sm" @click="redu">Instagram</button>
+                                                                        </div>
+                                                                    </div> 
+                                                                    <div class="col-auto">
+                                                                        <div class="input-group mb-2">
+                                                                            <div class="input-group-prepend">
+                                                                                <span class="iconoFace input-group-text"><i class="tamaño-icono fab fa-facebook"></i></span>
+                                                                            </div>
+                                                                            <button type="button" class="btn btn-outline-primary btn-sm" @click="redu">Facebook</button>
+                                                                        </div>  
+                                                                    </div>  
+                                                                </div> 
+                                                            </div>
+                                                        </div>
+                                                    </div> 
+                                                    <div v-show="percent>=80">
+                                                        <h5 class="text-success"> </br> </br> Estudiante atento</h5>
+                                                        <h5> </br> La mayor parte del tiempo te mantienes atento a tus actividades academicas y no cuentas con muchas distracciones, Felicidades!!</h5>
                                                     </div>
-                                                </div>
+                                                
+                                                    <div v-show="percent<80 && percent>55">
+                                                        <h5 class="text-warning"> </br> </br>Estudiante distraido</h5>
+                                                        <h5> </br> Te distraes un poco durante las actividades academicas, trata de evitar las distraciones y concentrate en tus clases</h5>
+                                                    </div>
 
-                                                <div v-show="percent<=55">
-                                                    <h5 class="text-danger" style="font-size:30px;"> </br> </br>Estudiante Muy distraido <i class="fas fa-thumbs-down"></i></h5>
-                                                    <h5 style="font-size:20px;" > </br> Te distraes mucho, evita las distracciones a toda costa ya que estas podrian afectar tu apredizaje y rendimiento academico</h5>
-                                                    <div style="padding-top:40px;">
-                                                        <button class="btn btn-primary" id="tip">Tip<i class="far fa-calendar-check"></i></button>
+                                                    <div v-show="percent<=55">
+                                                        <h5 class="text-danger"> </br> </br>Estudiante Muy distraido</h5>
+                                                        <h5> </br> Te distraes mucho, evita las distracciones a toda costa ya que estas podrian afectar tu apredizaje y rendimiento academico</h5>   
+                                                    
                                                     </div>
-                                                </div>                                       
-                                                
+                                                                                                                                                                                                 
                                             </div>
 
                                                                                                                                                                     
 
                                         </script>
-                                        
+
                                         <div id="app"></div>
-                                        
+                                        <!-- partial -->
+                                        <script
+                                            src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.4/vue.min.js'></script>
+                                        <script src="js/script_simulador.js"></script>
+                                        <!--
+                                            <div class="col-md-6 col-lg-8 mb-5">
+                                            
+                                                <h5> </br> </br> Mensaje </br> Lorem ipsum dolor sit amet, consectetur adipisicing elit.Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</h5>
+                                            </div>
+                                            -->
+
                                     </div>
                                 </div>
+                                <button class="btn btn-primary" id="tipcalculo"><i class="fas fa-fw"></i>Tip</button>
                             </div>
                         </div>
                     </div>
@@ -587,24 +577,27 @@ $nombre_user = mysqli_fetch_array($consulta_sql);
     <div class="portfolio-modal modal fade" id="SimulacionProgramacion" tabindex="-1" role="dialog"
         aria-labelledby="#SimulacionProgramacionLabel" aria-hidden="true">
         <div class="modal-dialog modal-xl" role="document">
-            <div class="modal-content rounded border border-info">
+            <div class="modal-content">
                 <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i
                             class="fas fa-times"></i></span></button>
-                <div class="modal-body text-center borde-portfolio"style="border-width:20px;padding: 0.7rem 0.7rem!important; background-color:#007bff!important;">
-                    <div class="container bg-light">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8 padding-portfolio"> 
-                                <!-- Title-->
-                                <h2 class="portfolio-modal-title text-info mb-0">Programacion</h2>
-                                <!-- Icon Divider-->
-                                <div class="divider-custom">
-                                    <div class="divider-custom-line"></div>
-                                    <div class="divider-custom-icon"><i class="fas fa-laptop-code"></i></div>
-                                    <div class="divider-custom-line"></div>
-                                </div>
-                                <div class="container ">
-                                    <div class="row justify-content-center">
-                                        <script type="text/x-templete" id="progress-circle">
+                <div class="modal-body text-center">
+                    <div class="container">
+                        <!-- Title-->
+                        <h2 class="portfolio-modal-title text-info mb-0">Programación</h2>
+                        <!-- Icon Divider-->
+                        <div class="divider-custom">
+                            <div class="divider-custom-line"></div>
+                            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                            <div class="divider-custom-line"></div>
+                        </div>
+                        <div class="container ">
+                            <!-- Simulator Section Heading-->
+                            <!-- Simulator Section Content-->
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <div class="d-flex flex-column align-items-center">
+
+                                    <script type="text/x-templete" id="progress-circle">
                                             <div class="progress-circle">
                                                 <div class="progress-circle-inner" :style="innerStyle">
                                                     <svg viewBox="0 0 100 100">
@@ -617,150 +610,125 @@ $nombre_user = mysqli_fetch_array($consulta_sql);
                                         </script>
 
                                         <script type="text/x-templete" id="main-page2">
-                                                <div>
-                                                    <div class="demo1">
-                                                        <progress-circle
-                                                            :percent="percent"
-                                                            :strokeColor="strokeColor"
-                                                            :strokeWidth="strokeWidth"
-                                                            :size="size">
-                                                                <div v-show="percent!=100">{{percent}}%</div>
-                                                                <div class="progress-success-iconwrap" :class="{active: percent===100}">
-                                                                    <svg viewBox="0 0 80 60">
-                                                                        <path d="M10,30 l20,20 l40,-40" fill="none" :stroke="strokeColor" stroke-width="4" stroke-linecap="round" id="successPath" :style="pathStyle" class="progress-success-icon"></path>
-                                                                    </svg>
-                                                                </div>
-                                                        </progress-circle>
-                                                    </div>
-                                                    <div class="text-center"  style="padding-bottom:20px;"">
+                                            <div>
 
-                                                        <!-- Botones  + - Simulacion-->
-                                                        
-                                                        <div class="btn-group" role="group" aria-label="Basic example">
-                                                        <!--
-                                                            <button type="button" class="btn btn-outline-primary btn-sm" @click="dec">-</button>
-                                                            <button type="button" class="btn btn-outline-primary btn-sm" @click="add">+</button>
-                                                        -->
-                                                            <button type="button" class="btn btn-outline-primary btn-sm" @click="Restart">Restablecer</button>
-                                                        </div>
-                                                        
-                                                    </div>
+                                                <div class="demo1">
+                                                    <progress-circle
+                                                        :percent="percent"
+                                                        :strokeColor="strokeColor"
+                                                        :strokeWidth="strokeWidth"
+                                                        :size="size">
 
-                                                    <!-- APLICACIONES DISTRACTORAS -->
-                                                    <div class="card ">
-                                                        <div class="container card-header" style="padding-top:20px;">
-                                                            <form id="horasForm2">
-                                                                <div class="row justify-content-center align-items-center">
-                                                                    <div class="col-md-6 col-sm-12 form-group mb-2" style="padding-right:0px;">
-                                                                        <h6>Duracion de la clase:</h6>
-                                                                    </div>
-                                                                    <div class="col-md-4 col-sm-12 form-group mb-2" style="padding-left:0px;">
-                                                                        <label for="inputHoras2" class="sr-only">Horas</label>
-                                                                        <input type="number" class="form-control" id="inputHoras2" placeholder="Horas">
-                                                                    </div>
-                                                                </div>
-                                                            </form>
-                                                            <form id="minutosForm2" >
-                                                                <div class="row justify-content-center align-items-center">
-                                                                    <div class="col-md-6 col-sm-12 form-group mb-2" style="padding-right:0px;">
-                                                                        <h6>Cantidad de minutos en aplicación:</h6>
-                                                                    </div>
-                                                                    <div class="col-md-4 col-sm-12 form-group mb-2" style="padding-left:0px;">
-                                                                        <label for="inputMinutes2" class="sr-only">Minutos</label>
-                                                                        <input type="number" class="form-control" id="inputMinutes2" placeholder="Minutos">
-                                                                    </div>
-                                                                </div>
-                                                            </form>
-                                                        
-                                                        </div>
-                                                        <div class="card-body" style="padding-top:10px;">
-                                                            <div class="container">
-                                                                <div style="padding-top:10px;">
-                                                                    <h5>Selecciona la aplicacion distractora:</h5>
-                                                                </div>
-                                                                <div class="d-flex justify-content-center espacio-icono">
-                                                                    
-                                                                    <div class="row" role="group" id="BotonesIconos">
-                                                                        <div class="mr-2">
-                                                                                <button type="button" class="btn btn-sm padding-Iconos" @click="wssp">
-                                                                                    <span class="iconoWhats input-group-text icono"><i class="tamaño-icono fab fa-whatsapp"></i></span>
-                                                                                </button>
-                                                                                <input type="number" class="form-control" id="PorcentajeWssp2" value="0" readonly style="width:65px">
-                                                                        </div> 
-                                                                        <div class="mr-2">
-                                                                                <button type="button" class="btn btn-sm padding-Iconos" @click="facebook">
-                                                                                    <span class="iconoFace input-group-text icono"><i class="tamaño-icono fab fa-facebook"></i></span>
-                                                                                </button>
-                                                                                <input type="number" class="form-control" id="PorcentajeFace2" value="0" readonly style="width:65px">
-                                                                        </div>                                                 
-                                                                        <div class="mr-2">
-                                                                                <button type="button" class="btn btn-sm padding-Iconos" @click="instagram">
-                                                                                    <span class="instagram icono input-group-text"><i class="tamaño-icono fab fa-instagram"></i></span>
-                                                                                </button>
-                                                                                <input type="number" class="form-control" id="PorcentajeInsta2" value="0" readonly style="width:65px">
-                                                                        </div>
-                                                                        <div class="mr-2">
-                                                                                <button type="button" class="btn btn-sm padding-Iconos" @click="twitter">
-                                                                                    <span class="iconoTwit input-group-text icono"><i class="tamaño-icono fab fa-twitter"></i></span>
-                                                                                </button>
-                                                                                <input type="number" class="form-control" id="PorcentajeTw2" value="0" readonly style="width:65px">
-                                                                        </div>
-                                                                        <div class="mr-2">
-                                                                                <button type="button" class="btn btn-sm padding-Iconos" @click="youtube">
-                                                                                    <span class="iconoYou input-group-text icono"><i class="tamaño-icono fab fa-youtube"></i></span>
-                                                                                </button>
-                                                                                <input type="number" class="form-control" id="PorcentajeYout2" value="0" readonly style="width:65px">
-                                                                        </div>
-                                                                        <div class="mr-2">
-                                                                                <button type="button" class="btn btn-sm padding-Iconos" @click="tiktok">
-                                                                                    <span class="iconoTik input-group-text icono"><span class="iconify tamaño-icono" data-icon="simple-icons:tiktok" data-inline="false"></span></span>
-                                                                                </button>
-                                                                                <input type="number" class="form-control" id="PorcentajeTik2" value="0" readonly style="width:65px">
-                                                                        </div>
-                                                                        <div class="mr-2">
-                                                                                <button type="button" class="btn btn-sm padding-Iconos" @click="game">
-                                                                                    <span class="iconoGam input-group-text icono"><i class="tamaño-icono fas fa-gamepad"></i></span>
-                                                                                </button>
-                                                                                <input type="number" class="form-control" id="PorcentajeGame2" value="0" readonly style="width:65px">
-                                                                        </div> 
-                                                                    </div>
-                                                                </div>
+                                                            <div v-show="percent!=100">{{percent}}%</div>
+                                                            <div class="progress-success-iconwrap" :class="{active: percent===100}">
+                                                                <svg viewBox="0 0 80 60">
+                                                                    <path d="M10,30 l20,20 l40,-40" fill="none" :stroke="strokeColor" stroke-width="4" stroke-linecap="round" id="successPath" :style="pathStyle" class="progress-success-icon"></path>
+                                                                </svg>
                                                             </div>
+                                                        
+                                                    </progress-circle>
+                                                </div>
+                                                                                                                                                                                    
+                                                <div class="text-center">
+
+                                                    <!-- Botones  + - Simulacion-->
+                                                    <div class="btn-group" role="group" aria-label="Basic example">
+                                                        <button type="button" class="btn btn-outline-primary btn-sm" @click="dec">-</button>
+                                                        <button type="button" class="btn btn-outline-primary btn-sm" @click="add">+</button>
+                                                        <button type="button" class="btn btn-outline-primary btn-sm" @click="Restart">Restablecer</button>
+                                                    </div>
+
+                                                    <div class="container" style="padding-top:20px;">
+                                                        <div class="row justify-content-md-center">
+                                                            <form class="form-inline" id="horasForm2">
+                                                                <div class="form-group mb-1">
+                                                                    <h6>Duracion de la clase</h6>
+                                                                </div>
+                                                                <div class="form-group mx-sm-4 mb-1">
+                                                                    <label for="inputHoras2" class="sr-only">Horas</label>
+                                                                    <input type="number" class="form-control" id="inputHoras2" placeholder="Horas">
+                                                                </div>  
+                                                            </form>
                                                         </div>
                                                     </div>
-                                                    
-                                                    
+
+                                                    <div class="container" style="padding-top:10px;">
+                                                        <div class="row justify-content-md-center">
+                                                            <form class="form-inline" id="minutosForm2">
+                                                                <div class="form-group mb-1">
+                                                                    <h6>Cantidad de tiempo en aplicacion</h6>
+                                                                </div>
+                                                                <div class="form-group mx-sm-4 mb-1">
+                                                                    <label for="inputMinutes2" class="sr-only">Minutos</label>
+                                                                    <input type="number" class="form-control" id="inputMinutes2" placeholder="Minutos">
+                                                                </div>  
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                
+
+                                                <!-- APLICACIONES DISTRACTORAS -->
+
+                                                <div class="row justify-content-md-center">
+                                                    <div class="espacio-icono">
+                                                        <div class="input-group" role="group">
+                                                            <div class="col-auto">
+                                                                <div class="input-group mb-2">
+                                                                    <div class="input-group-prepend">
+                                                                        <span class="iconoWhats input-group-text "><i class="tamaño-icono fab fa-whatsapp"></i></span>
+                                                                    </div>
+                                                                    <button type="button" class="btn btn-outline-primary btn-sm" @click="redu">Whatsapp</button>
+                                                                </div>
+                                                            </div>    
+                                                            <div class="col-auto">
+                                                                <div class="input-group mb-2">
+                                                                    <div class="input-group-prepend">
+                                                                        <span class="instagram input-group-text"><i class="tamaño-icono fab fa-instagram"></i></span>
+                                                                    </div>
+                                                                    <button type="button" class="btn btn-outline-primary btn-sm" @click="redu">Instagram</button>
+                                                                </div>
+                                                            </div> 
+                                                            <div class="col-auto">
+                                                                <div class="input-group mb-2">
+                                                                    <div class="input-group-prepend">
+                                                                        <span class="iconoFace input-group-text"><i class="tamaño-icono fab fa-facebook"></i></span>
+                                                                    </div>
+                                                                    <button type="button" class="btn btn-outline-primary btn-sm" @click="redu">Facebook</button>
+                                                                </div>  
+                                                            </div>  
+                                                        </div> 
+                                                    </div>
                                                     <div v-show="percent>=80">
-                                                        <h5 class="text-success" style="font-size:30px;"> </br> </br> Estudiante atento  <i class="fas fa-check-circle"></i></h5>
-                                                        <h5 style="font-size:20px;"> </br> La mayor parte del tiempo te mantienes atento a tus actividades academicas y no cuentas con muchas distracciones, Felicidades!!</h5>
+                                                        <h5 class="text-success"> </br> </br> Estudiante atento</h5>
+                                                        <h5> </br> La mayor parte del tiempo te mantienes atento a tus actividades academicas y no cuentas con muchas distracciones, Felicidades!!</h5>
                                                     </div>
-                                                    
+                                                
                                                     <div v-show="percent<80 && percent>55">
-                                                        <h5 class="text-warning" style="font-size:30px;"> </br> </br>Estudiante distraido <i class="fas fa-exclamation-circle"></i></h5>
-                                                        <h5 style="font-size:20px;"> </br> Te distraes un poco durante las actividades academicas, trata de evitar las distraciones y concentrate en tus clases</h5>
-                                                        <div style="padding-top:40px;">
-                                                            <button class="btn btn-primary" id="tip2">Tip<i class="far fa-calendar-check"></i></button>
-                                                        </div>
+                                                        <h5 class="text-warning"> </br> </br>Estudiante distraido</h5>
+                                                        <h5> </br> Te distraes un poco durante las actividades academicas, trata de evitar las distraciones y concentrate en tus clases</h5>
                                                     </div>
 
                                                     <div v-show="percent<=55">
-                                                        <h5 class="text-danger" style="font-size:30px;"> </br> </br>Estudiante Muy distraido <i class="fas fa-thumbs-down"></i></h5>
-                                                        <h5 style="font-size:20px;" > </br> Te distraes mucho, evita las distracciones a toda costa ya que estas podrian afectar tu apredizaje y rendimiento academico</h5>
-                                                        <div style="padding-top:40px;">
-                                                            <button class="btn btn-primary" id="tip2">Tip<i class="far fa-calendar-check"></i></button>
-                                                        </div>
-                                                    </div>     
+                                                        <h5 class="text-danger"> </br> </br>Estudiante Muy distraido</h5>
+                                                    <h5> </br> Te distraes mucho, evita las distracciones a toda costa ya que estas podrian afectar tu apredizaje y rendimiento academico</h5>   
+                                                </div>                                                                                                                                                  
+                                            </div>
 
-                                                </div>
+                                                                                                                                                                    
+
                                         </script>
-
                                         <div id="app2"></div>
                                         <!-- partial -->
-                                        
+                                        <script
+                                            src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.4/vue.min.js'></script>
+                                        <script src="js/script_simulador.js"></script>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <button class="btn btn-primary" id="tipclase2"><i class="fas fa-fw"></i>Tip</button>
                     </div>
                 </div>
             </div>
@@ -777,15 +745,15 @@ $nombre_user = mysqli_fetch_array($consulta_sql);
             <!-- Icon Divider-->
             <div class="divider-custom">
                 <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fas fa-info-circle"></i></div>
+                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                 <div class="divider-custom-line"></div>
             </div>
             <!-- Contact Section Content-->
             <div class="row justify-content-center">
-                <div class="col-lg-8">
+                <div class="col-lg-4">
                     <div class="d-flex flex-column align-items-center">
                         <div class="icon-contact mb-3"><i class="far fa-envelope"></i></div>
-                            <a class="lead font-weight-bold text-white mifuente" 
+                        <!--<div class="text-muted">Email</div>--><a class="lead font-weight-bold text-white"
                             href="mailto:name@example.com">UNALGrupo8ISYC@Servicioalcliente.com</a>
                     </div>
                 </div>
@@ -833,7 +801,7 @@ $nombre_user = mysqli_fetch_array($consulta_sql);
             class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top"><i
                 class="fa fa-chevron-up"></i></a></div>
     <!-- Bootstrap core JS-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
@@ -841,15 +809,13 @@ $nombre_user = mysqli_fetch_array($consulta_sql);
     <!-- Third party plugin JS-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
     <!-- Contact form JS-->
+    <script src="assets/mail/jqBootstrapValidation.js"></script>
+    <script src="assets/mail/contact_me.js"></script>
+    <script src="jquery-3.5.1.min.js"></script>
     <!-- Core theme JS-->
 
     <!-- JS simulador-->
     <script src="js/scripts.js"></script>
-    <!--Vue JS-->
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.4/vue.min.js'></script>
-    <script src="js/script_simulador.js"></script>
-    <!--Iconify JS -->
-    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
 </body>
 
 </html>
