@@ -208,15 +208,60 @@ $nombre_user = mysqli_fetch_array($consulta_sql);
                                     </span>
                                     <div class="progress-value">90%</div>
                                 </div>
-                                <p class="">(Aqui se mostraría las aplicaciones "restringidas" que el usuario ejecuto)
-                                </p>
-                                <div class="margen-Hoy flex-row ">
-                                    <img class="img-fluid align center" src="Images/Facebook.png" width="100px"
-                                        alt="Log Cabin" />
-                                    <img class="img-fluid align center" src="Images/Instagram.png" width="105px"
-                                        alt="Log Cabin" />
+                                <div class="card text-center">
+                                    <div class="card-body" style="padding-top:10px;">
+                                        <div class="container">
+                                            <div style="padding-top:10px;">
+                                                <h5>Aplicaciones distractoras utilizadas:</h5>
+                                            </div>
+                                            <div class="d-flex justify-content-center espacio-icono text-center">
+                                                <div class="row justify-content-center" role="group" id="BotonesIconos">
+                                                    <div class="mr-2">
+                                                        <span class="iconoWhats input-group-text icono"><i class="tamaño-icono fab fa-whatsapp"></i>
+                                                            <input type="number" class="form-control iconos-input" id="PorcentajeWssp" value="0" readonly>
+                                                        </span>
+                                                    </div> 
+                                                    <div class="mr-2 ">
+                                                        <span class="iconoFace input-group-text icono"><i class="tamaño-icono fab fa-facebook"></i>
+                                                            <input type="number" class="form-control iconos-input" id="PorcentajeFace" value="0" readonly>
+                                                        </span>
+                                                    </div>                                                 
+                                                    <div class="mr-2">
+                                                        <span class="instagram icono input-group-text"><i class="tamaño-icono fab fa-instagram"></i>
+                                                            <input type="number" class="form-control iconos-input" id="PorcentajeInsta" value="0" readonly>
+                                                        </span>
+                                                    </div>
+                                                    <div class="mr-2">
+                                                        <span class="iconoTwit input-group-text icono"><i class="tamaño-icono fab fa-twitter"></i>
+                                                            <input type="number" class="form-control iconos-input" id="PorcentajeTw" value="0" readonly>
+                                                        </span>
+                                                            
+                                                    </div>
+                                                    <div class="mr-2">
+                                                        <span class="iconoYou input-group-text icono"><i class="tamaño-icono fab fa-youtube"></i>
+                                                            <input type="number" class="form-control iconos-input" id="PorcentajeYout" value="0" readonly>
+                                                        </span>
+                                                    </div>
+                                                    <div class="mr-2">
+                                                        <span class="iconoTik input-group-text icono">
+                                                            <span class="iconify tamaño-icono" data-icon="simple-icons:tiktok" data-inline="false"></span>
+                                                            <input type="number" class="form-control iconos-input" id="PorcentajeTik" value="0" readonly>
+                                                        </span>
+                                                    </div>
+                                                    <div class="mr-2">
+                                                        <span class="iconoGam input-group-text icono"><i class="tamaño-icono fas fa-gamepad"></i>
+                                                            <input type="number" class="form-control iconos-input" id="PorcentajeGame" value="0" readonly>
+                                                        </span>
+                                                        
+                                                            
+                                                    </div> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                </div>
+                                
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -499,45 +544,37 @@ $nombre_user = mysqli_fetch_array($consulta_sql);
                                                                     <div class="mr-2">
                                                                             <button type="button" class="btn btn-sm padding-Iconos" @click="wssp">
                                                                                 <span class="iconoWhats input-group-text icono"><i class="tamaño-icono fab fa-whatsapp"></i></span>
-                                                                            </button>
-                                                                            <input type="number" class="form-control" id="PorcentajeWssp" value="0" readonly style="width:65px">
-                                                                    </div> 
+                                                                            </button></div> 
                                                                     <div class="mr-2">
                                                                             <button type="button" class="btn btn-sm padding-Iconos" @click="facebook">
                                                                                 <span class="iconoFace input-group-text icono"><i class="tamaño-icono fab fa-facebook"></i></span>
                                                                             </button>
-                                                                            <input type="number" class="form-control" id="PorcentajeFace" value="0" readonly style="width:65px">
                                                                     </div>                                                 
                                                                     <div class="mr-2">
                                                                             <button type="button" class="btn btn-sm padding-Iconos" @click="instagram">
                                                                                 <span class="instagram icono input-group-text"><i class="tamaño-icono fab fa-instagram"></i></span>
                                                                             </button>
-                                                                            <input type="number" class="form-control" id="PorcentajeInsta" value="0" readonly style="width:65px">
-                                                                    </div>
+                                                                           </div>
                                                                     <div class="mr-2">
                                                                             <button type="button" class="btn btn-sm padding-Iconos" @click="twitter">
                                                                                 <span class="iconoTwit input-group-text icono"><i class="tamaño-icono fab fa-twitter"></i></span>
                                                                             </button>
-                                                                            <input type="number" class="form-control" id="PorcentajeTw" value="0" readonly style="width:65px">
-                                                                    </div>
+                                                                           </div>
                                                                     <div class="mr-2">
                                                                             <button type="button" class="btn btn-sm padding-Iconos" @click="youtube">
                                                                                 <span class="iconoYou input-group-text icono"><i class="tamaño-icono fab fa-youtube"></i></span>
                                                                             </button>
-                                                                            <input type="number" class="form-control" id="PorcentajeYout" value="0" readonly style="width:65px">
                                                                     </div>
                                                                     <div class="mr-2">
                                                                             <button type="button" class="btn btn-sm padding-Iconos" @click="tiktok">
                                                                                 <span class="iconoTik input-group-text icono"><span class="iconify tamaño-icono" data-icon="simple-icons:tiktok" data-inline="false"></span></span>
                                                                             </button>
-                                                                            <input type="number" class="form-control" id="PorcentajeTik" value="0" readonly style="width:65px">
-                                                                    </div>
+                                                                            </div>
                                                                     <div class="mr-2">
                                                                             <button type="button" class="btn btn-sm padding-Iconos" @click="game">
                                                                                 <span class="iconoGam input-group-text icono"><i class="tamaño-icono fas fa-gamepad"></i></span>
                                                                             </button>
-                                                                            <input type="number" class="form-control" id="PorcentajeGame" value="0" readonly style="width:65px">
-                                                                    </div> 
+                                                                            </div> 
                                                                 </div>
                                                             </div>
                                                         </div>

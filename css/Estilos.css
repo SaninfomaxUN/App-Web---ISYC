@@ -1,3 +1,8 @@
+.iconos-input{
+    width:50px;
+    padding-right:0px; 
+    margin-left: 10px;
+}
 .padding-Iconos{
     padding:0px!important
 }
@@ -51,8 +56,6 @@
     background: black;
 }
 .instagram {
-    display: inline-block;
-    text-align: center;
     color: #fff;
     vertical-align: middle;
     background: #d6249f;
