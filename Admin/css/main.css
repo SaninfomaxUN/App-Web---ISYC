@@ -1,0 +1,40 @@
+body {
+    /*background: #1f4037;
+    background: -webkit-linear-gradient(to top, #99f2c8, #1f4037);
+    background: linear-gradient(to top, #99f2c8, #1f4037);
+    background: #8360c3; */
+	background-image: -webkit-linear-gradient(to right, #2ebf91, #8360c3);  
+    background-image: linear-gradient(to right, #2ebf91, #8360c3);
+    background-size: cover;
+    
+
+}
+.containerread{
+    max-width:700px;
+}
+    
+body, html{
+    width: 100%!important;
+    height: 100%;
+    padding-top: 70px!important;
+    min-width: 100%;
+    margin: 0 auto;
+}
+.page-header h2{
+    
+    margin-top: 0;
+}
+table tr td:last-child a{
+    margin-right: 15px;
+}
+.readInfo{
+    padding-top: 5px!important;
+    padding-bottom: 0px!important;
+}
+.readCard{
+    padding-bottom:0px!important;
+}
+.readInfo2{
+    margin-bottom: 0px!important;
+    margin-top: 10px!important;
+}
